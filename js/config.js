@@ -210,7 +210,7 @@ var config = {
             description: "From the city of Cotonou, she got on a bus going to the Seme- Krake border between Benin Republic and Nigeria. On getting to the Seme- Krake border, she disembarked from the bus and joined a queue of people waiting to cross the border.",
             location: {
                 center: [2.3912, 6.3703],
-                zoom: 15.00,
+                zoom: 20.00,
                 pitch: 45.00,
                 bearing: 0.00,
                 speed: 0.5,
@@ -582,7 +582,7 @@ var config = {
             hidden: false,
             alignment: 'full',
             title: '',
-	    image: './video/seamstress.gif',
+            image: './video/seamstress.gif',
             description: "“I do not face discrimination but sometimes, I have been told I am a foreigner, and some people do things to frustrate me, especially if they know you do not have networks or family to support you. These are challenges that are everywhere, even in my own place in Ghana— you can get insulted for not being an indigene even in Ghana. But if you know what you want, you close your eyes and face it. I tried to bring people from Ghana to work with me here, but they don’t want to come to Nigeria. They are afraid. I was also afraid of Nigeria before I came here but after I decided to come here, I realized there was no harm in trying. I close my eyes and keep going. They say if you stay in Nigeria, there is no place in this world that you cannot stay.”",
             // location: {
             //     center: [3.3087, 6.5355],
