@@ -19,7 +19,7 @@ var config = {
                 center: [0.47773, 7.15319],
                 zoom: 5.00,
                 pitch: 45.00,
-                bearing: -40.00,
+                bearing: 0.00,
                 speed: 0.2,
                 curve: 1
             },
@@ -27,7 +27,7 @@ var config = {
         {
             id: 'patience',
             alignment: 'full',
-            title: 'Patience at Work',
+            title: '',
             image: './images/work.jpg',
             description: '“After I graduated from secondary school in 2003, I decided to travel to Nigeria because my uncle who lived in Lagos offered me a place to stay and a job as an apprentice in a tailor shop.”',
             location: {
