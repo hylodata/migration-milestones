@@ -4,9 +4,9 @@ var config = {
     showMarkers: false,
     theme: 'light',
     use3dTerrain: true,
-    title: "Patience's Journey",
+    title: "PATIENCE'S JOURNEY",
     subtitle: '',
-    byline: 'Aperiam velit et dolorem laudantium. Perferendis a aut qui exercitationem distinctio id inventore iure. Optio rerum voluptatum autem quae commodi vitae dignissimos in. Officiis blanditiis impedit doloribus eum accusamus.',
+    byline: '',
     footer: 'Source: CERC Migration, 2022. Data from <a href="http://losingtime.ca">Toronto Metropolitan University</a>',
     chapters: [{
             id: 'home',
@@ -14,10 +14,10 @@ var config = {
             alignment: 'full',
             title: '',
             image: '',
-            description: '',
+            description: '<p style="color: red; font-size: 20px;">This is my first paragraph.</p>',
             location: {
                 center: [0.47773, 7.15319],
-                zoom: 5.00,
+                zoom: 7.00,
                 pitch: 45.00,
                 bearing: 0.00,
                 speed: 0.2,
@@ -25,19 +25,23 @@ var config = {
             },
         },
         {
+            id: 'home2',
+            hidden: true
+        },
+        {
             id: 'patience',
             alignment: 'full',
             title: '',
-            image: './images/work.jpg',
-            description: '“After I graduated from secondary school in 2003, I decided to travel to Nigeria because my uncle who lived in Lagos offered me a place to stay and a job as an apprentice in a tailor shop.”',
+            image: './video/cutcity.gif',
+            description: '<center><i>“After I graduated from secondary school in 2003, I decided to travel to Nigeria because my uncle who lived in Lagos offered me a place to stay and a job as an apprentice in a tailor shop.”</i></center>',
             location: {
-                center: [0.47773, 7.15319],
+                center: [0.47401, 7.15187],
                 zoom: 16.00,
                 pitch: 45.00,
-                bearing: -40.00,
-                speed: 0.2,
+                bearing: 0.00,
+                speed: 0.3,
                 curve: 1
-            },
+            }
         },
         {
             id: 'hohoe2003',
@@ -84,7 +88,7 @@ var config = {
             image: '',
             description: "",
             location: {
-                center: [1.22540, 6.13253],
+                center: [1.21990, 6.12587],
                 zoom: 15.00,
                 pitch: 45.00,
                 bearing: 0.00,
@@ -99,15 +103,16 @@ var config = {
             image: '',
             description: "After crossing the border, she changed some money from Ghanaian cedis to CFA and boarded another minibus heading towards Lome, the largest city in Togo, and the Sanve Kondji- Hillacondji border between Togo and Benin Republic. At the border, she is asked to show her passport and health certificate and again, she is required to pay a fee to the officers, which she does. She has spent about half of the money given to her for transportation at this point. From the border, she boarded another bus to Cotonou, the largest city in Benin Republic."
         },
-        {
+	               {
             id: 'cotonou2013',
-            alignment: 'left',
-            title: 'Cotonou, Benin',
+            hidden: true,
+            alignment: '',
+            title: '',
             image: '',
-            description: "From the city of Cotonou, she got on a bus going to the Seme- Krake border between Benin Republic and Nigeria. On getting to the Seme- Krake border, she disembarked from the bus and joined a queue of people waiting to cross the border.",
+            description: "",
             location: {
-                center: [2.3912, 6.3703],
-                zoom: 20.00,
+                center: [2.39007, 6.37056],
+                zoom: 16.00,
                 pitch: 45.00,
                 bearing: 0.00,
                 speed: 0.5,
@@ -115,10 +120,17 @@ var config = {
             }
         },
         {
+            id: 'cotonou2013a',
+            alignment: 'right',
+            title: 'Cotonou, Benin',
+            image: '',
+            description: "From the city of Cotonou, she got on a bus going to the Seme- Krake border between Benin Republic and Nigeria. On getting to the Seme- Krake border, she disembarked from the bus and joined a queue of people waiting to cross the border."
+        },
+        {
             id: 'seme2013a',
             hidden: true,
             location: {
-                center: [2.705284359806152, 6.379854679264657],
+                center: [2.70558, 6.38595],
                 zoom: 15.00,
                 pitch: 45.00,
                 bearing: 0.00,
@@ -141,19 +153,19 @@ var config = {
                 curve: 1
             }
         },
-        {
-            id: 'seme2013c',
-            alignment: '',
-            title: '',
-            image: '',
-            description: "Freedom of Movement indicator: Patience has an ECOWAS passport and this has made traveling between Ghana, Togo, Benin and Nigeria relatively easier for her. However, she says that her biggest challenge is having to pay money at the Aflao-Kodjoviakopé border, the Sanve Kondji- Hillacondji border, and at the Seme- Krake border to immigration officials even though she has a passport. There is both a formal and informal border between Krake and Seme and entry and exit at the formal border is possible  for Patience because of her passport.  Having a passport determines how one crosses the border. People with passports can enter with cars or on foot, whereas, those without passports often rely on informal paths on okada (public bike transportation) or on foot."
-        },
+        // {
+        //     id: 'seme2013c',
+        //     alignment: '',
+        //     title: '',
+        //     image: '',
+        //     description: "Freedom of Movement indicator: Patience has an ECOWAS passport and this has made traveling between Ghana, Togo, Benin and Nigeria relatively easier for her. However, she says that her biggest challenge is having to pay money at the Aflao-Kodjoviakopé border, the Sanve Kondji- Hillacondji border, and at the Seme- Krake border to immigration officials even though she has a passport. There is both a formal and informal border between Krake and Seme and entry and exit at the formal border is possible  for Patience because of her passport.  Having a passport determines how one crosses the border. People with passports can enter with cars or on foot, whereas, those without passports often rely on informal paths on okada (public bike transportation) or on foot."
+        // },
         {
             id: 'badagry2013a',
             alignment: '',
             title: '',
             image: './images/border.jpg',
-            description: "“When we got to Seme border, they asked me for my passport and what I am coming to Nigeria to do. It was not a difficult experience to pass the border, but we had to pay money to officers at the border. After I arrived, I was staying with my uncle in Lagos for five years.”",
+            description: "<i>“When we got to Seme border, they asked me for my passport and what I am coming to Nigeria to do. It was not a difficult experience to pass the border, but we had to pay money to officers at the border. After I arrived, I was staying with my uncle in Lagos for five years.”</i> <br> <br> Freedom of Movement indicator: Patience has an ECOWAS passport and this has made traveling between Ghana, Togo, Benin and Nigeria relatively easier for her. However, she says that her biggest challenge is having to pay money at the Aflao-Kodjoviakopé border, the Sanve Kondji- Hillacondji border, and at the Seme- Krake border to immigration officials even though she has a passport. There is both a formal and informal border between Krake and Seme and entry and exit at the formal border is possible  for Patience because of her passport.  Having a passport determines how one crosses the border. People with passports can enter with cars or on foot, whereas, those without passports often rely on informal paths on okada (public bike transportation) or on foot.",
             location: {
                 center: [2.705284359806152, 6.379854679264657],
                 zoom: 15.00,
@@ -190,13 +202,13 @@ var config = {
                 zoom: 15.00,
                 pitch: 45.00,
                 bearing: 0.00,
-                speed: 1,
+                speed: 0.8,
                 curve: 1
             }
         },
         {
             id: 'aguda2013b',
-            alignment: 'left',
+            alignment: 'right',
             title: 'Aguda, Lagos Region, Nigeria',
             image: '',
             description: "Aguda is a suburb in Surulere local government area and was one of the areas Ghanaians from Patient’s community in Volta lived and settled at the time. She finally arrived in Aguda and her uncle picked her up from the bus stop. She lived with her uncle and worked at a thriving tailor shop from 2003 to 2008 where she learns how to sew women’s clothing.",
@@ -283,22 +295,22 @@ var config = {
             alignment: '',
             title: '',
             image: './images/hand.jpg',
-            description: "“I was homeless for a long time because my Uncle left. I called the tailor and told him that I want to work with him, he is the one I stayed with for a while. I lived in his shop in Isolo. When he started having rental challenges, he could no longer provide accommodation for me. I had to find a way out. It was very difficult. I had to find an affordable place to stay quickly and this is how I ended up remaining here in Isolo.”"
+            description: "<i>“I was homeless for a long time because my Uncle left. I called the tailor and told him that I want to work with him, he is the one I stayed with for a while. I lived in his shop in Isolo. When he started having rental challenges, he could no longer provide accommodation for me. I had to find a way out. It was very difficult. I had to find an affordable place to stay quickly and this is how I ended up remaining here in Isolo.”</i>"
         },
         {
             id: 'lagos2009d',
             alignment: '',
             title: '',
             image: './images/apprentice.jpg',
-            description: "Patience settled in Isolo from 2012, and has remained there ever since. She established her own tailoring business in 2015, with renewed confidence from three years of apprenticeship. She was able to save up money to rent her own shop and she currently has apprentices from Nigeria, Ghana and Togo and they live and work together. According to her, it was not easy to establish her business in Lagos, she has been struggling with the capital to keep her business afloat. She chose to stay in Lagos because she had an established customer base and didn’t feel like starting over elsewhere. The journey to Lagos allowed her to advance herself and employ others."
+            description: "Patience settled in Isolo from 2012, and has remained there ever since. She established her own tailoring business in 2015, with renewed confidence from three years of apprenticeship. She was able to save up money to rent her own shop and she currently has apprentices from Nigeria, Ghana and Togo and they live and work together. According to her, it was not easy to establish her business in Lagos, she has been struggling with the capital to keep her business afloat. She chose to stay in Lagos because she had an established customer base and didn’t feel like starting over elsewhere. The journey to Lagos allowed her to advance herself and employ others. <br> <br> <i>“I don’t belong to any community yet. Here in Isolo, there is a Togolese community, not a Ghanaian one. It was only once my uncle took me to a Ghanaian community meeting in Surulere when he was still in Nigeria. There were many people in the meeting. It is a meeting for the big (rich) Ghanaians so I don’t think I can be a part of it. I see myself as someone that has not reached that level, but they are forcing me to join.”</i>"
         },
-        {
-            id: 'lagos2009e',
-            alignment: '',
-            title: '',
-            image: '',
-            description: "“I don’t belong to any community yet. Here in Isolo, there is a Togolese community, not a Ghanaian one. It was only once my uncle took me to a Ghanaian community meeting in Surulere when he was still in Nigeria. There were many people in the meeting. It is a meeting for the big (rich) Ghanaians so I don’t think I can be a part of it. I see myself as someone that has not reached that level, but they are forcing me to join.“"
-        },
+        // {
+        //     id: 'lagos2009e',
+        //     alignment: '',
+        //     title: '',
+        //     image: '',
+        //     description: ""
+        // },
         {
             id: 'lagos2009f',
             alignment: '',
@@ -310,8 +322,8 @@ var config = {
             id: 'lagos2009g',
             alignment: 'full',
             title: '',
-            image: './video/seamstress.gif',
-            description: "“I do not face discrimination but sometimes, I have been told I am a foreigner, and some people do things to frustrate me, especially if they know you do not have networks or family to support you. These are challenges that are everywhere, even in my own place in Ghana— you can get insulted for not being an indigene even in Ghana. But if you know what you want, you close your eyes and face it. I tried to bring people from Ghana to work with me here, but they don’t want to come to Nigeria. They are afraid. I was also afraid of Nigeria before I came here but after I decided to come here, I realized there was no harm in trying. I close my eyes and keep going. They say if you stay in Nigeria, there is no place in this world that you cannot stay.”"
+            image: './video/sew.gif',
+            description: "<i>“I do not face discrimination but sometimes, I have been told I am a foreigner, and some people do things to frustrate me, especially if they know you do not have networks or family to support you. These are challenges that are everywhere, even in my own place in Ghana— you can get insulted for not being an indigene even in Ghana. But if you know what you want, you close your eyes and face it. I tried to bring people from Ghana to work with me here, but they don’t want to come to Nigeria. They are afraid. I was also afraid of Nigeria before I came here but after I decided to come here, I realized there was no harm in trying. I close my eyes and keep going. They say if you stay in Nigeria, there is no place in this world that you cannot stay.”</i>"
         },
     ]
 }
