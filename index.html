@@ -27,6 +27,38 @@
             color: #0071bc;
         }
 
+        article {
+            position: relative;
+            padding: 0;
+            max-width: 25rem;
+            margin: 0 auto;
+        }
+
+        .sticky-thing {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            background-color: #f3f3f3;
+            z-index: 0;
+            top: .01vh;
+            height: 100vh;
+            /* Center everything inside */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('images//TOP-VIEW.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .sticky-thing p {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
         #map {
             top: 0;
             height: 100vh;
@@ -149,7 +181,7 @@
 
         .step p {
             color: #444;
-          /* font-style: italic; */
+            /* font-style: italic; */
         }
 
         .step img {
@@ -183,6 +215,10 @@
 
     <script src="./js/config.js"></script>
     <script src="./js/layout.js"></script>
+
+    <!-- <div class="sticky-thing">
+         <p>lorem ipsum</p>
+	 </div> -->
 
 </body>
 
