@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- use below to auto-refresh changes in the browser -->
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
+
+    <meta charset='utf-8' />
+    <title>Patience's Journey</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
+    <link href='./css/mapboxstyle.css' rel='stylesheet' />
+    <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
+    <script src="https://unpkg.com/scrollama"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+                Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        a,
+        a:hover,
+        a:visited {
+            color: #0071bc;
+        }
+
+        article {
+            position: relative;
+            padding: 0;
+            max-width: 25rem;
+            margin: 0 auto;
+        }
+
+        .sticky-thing {
+            position: -webkit-sticky;
+            position: sticky;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            background-color: #f3f3f3;
+            z-index: 0;
+            top: .01vh;
+            height: 100vh;
+            /* Center everything inside */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('images//TOP-VIEW.jpg');
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .sticky-thing p {
+            font-size: 8rem;
+            font-weight: 900;
+            color: #fff;
+        }
+
+        #map {
+            top: 0;
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+        }
+
+        #mapInset {
+            bottom: 50px;
+            right: 30px;
+            height: 180px;
+            width: 250px;
+            max-width: 100%;
+            position: fixed;
+            z-index: 1;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+            pointer-events: none;
+        }
+
+        #mapInset .mapboxgl-ctrl-bottom-left {
+            display: none;
+        }
+
+        @media (max-width: 500px) {
+            #mapInset {
+                display: none;
+            }
+        }
+
+        #header {
+            margin: auto;
+            width: 100%;
+            position: relative;
+            z-index: 5;
+            background-color: #6990f2;
+            opacity: 0.7;
+        }
+
+        #header h1,
+        #header h2,
+        #header p {
+            margin: 0;
+            padding: 3vh 3vw;
+            text-align: center;
+            font-weight: 300;
+            font-size: 50px;
+            color: #fafafa;
+        }
+
+        #footer {
+            width: 100%;
+            min-height: 5vh;
+            padding-top: 1vh;
+            padding-bottom: 1vh;
+            text-align: center;
+            line-height: 25px;
+            font-size: 13px;
+            position: relative;
+            z-index: 5;
+        }
+
+        #features {
+            padding-top: 10vh;
+            padding-bottom: 10vh;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .centered {
+            width: 50vw;
+            margin: 0 auto;
+        }
+
+        .lefty {
+            width: 33vw;
+            margin-left: 5vw;
+        }
+
+        .righty {
+            width: 33vw;
+            margin-left: 62vw;
+        }
+
+        .fully {
+            width: 100%;
+            padding: 5px 5px;
+        }
+
+        .light {
+            color: #444;
+            background-color: #fafafa;
+            /* opacity: 0.9; */
+        }
+
+        .dark {
+            color: #fafafa;
+            background-color: #444;
+        }
+
+        .step {
+            padding-bottom: 80vh;
+            /* margin-bottom: 10vh; */
+            opacity: .95;
+            border-radius: 7px;
+        }
+
+        .step.active {
+            /* opacity: .9; */
+            border-radius: 7px;
+        }
+
+        .step div {
+            padding: 25px 45px;
+            line-height: 25px;
+            font-size: 20px;
+        }
+
+        .step p {
+            color: #444;
+            /* font-style: italic; */
+        }
+
+        .step img {
+            width: 100%;
+        }
+
+        @media (max-width: 750px) {
+
+            .centered,
+            .lefty,
+            .righty,
+            .fully {
+                width: 100vw;
+                margin: 0 auto;
+            }
+        }
+
+        /* Fix issue on mobile browser where scroll breaks  */
+        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
+        .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan .mapboxgl-canvas {
+            touch-action: unset;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <div id="mapInset"></div>
+    <div id="story"></div>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/layout.js"></script>
+
+    <!-- <div class="sticky-thing">
+         <p>lorem ipsum</p>
+	 </div> -->
+
+</body>
+
+</html>

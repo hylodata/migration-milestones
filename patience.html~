@@ -127,16 +127,6 @@
             transform: translate(-50%, -50%);
         }
 
-        .spacer {
-            height: 20vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 1.25vw;
-            padding: 80px 100px 30px 100px;
-        }
-
         #introImage {
             width: 100%;
             height: 100vh;
@@ -153,9 +143,26 @@
             align-items: center;
         }
 
+        .spacer {
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.25vw;
+            padding: 80px 100px 30px 100px;
+        }
+
         .img-responsive {
             width: 100%;
             height: auto;
+        }
+
+        .citation {
+            font-size: 0.8vw;
+            padding-left: 40px;
+            text-indent: -40px;
+            text-align: justify;
         }
 
         /* Scrollama Stuff */
@@ -207,22 +214,22 @@
             margin-bottom: 0;
         }
 
-        .bg {
-            /* Full height */
-            width: 100%;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #outroImage {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+     .bg {
+       /* Full height */
+       width: 100%;
+       /* Center and scale the image nicely */
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+     }
+     
+     #outroImage {
+       height: 100%;
+       width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     }
 
         .invisible {
             background-color: rgba(0, 0, 0, 0);
@@ -237,7 +244,7 @@
         <div id="introImage">
             <h1 class="title">Patience at the Border</h1>
             <p class="subtitle">
-                This scrolling story from CERC Migration traces the journey of an economic migrant from Ghana as she travels across borders, space, and time.
+              This scrolling story from CERC Migration traces the journey of an economic migrant from Ghana as she travels across borders, space, and time.
             </p>
             <img id="originalImage" src="./video/cutcity.gif" alt="">
         </div>
@@ -256,7 +263,7 @@
             <img class="bg" src="./images/work.jpg" alt="">
         </div>
         <p class="intro__dek">
-            In 2002, an opportunity arose when her uncle visited for Christmas and invited her to come to Lagos after graduating from Secondary School. He promised to provide both accommodation and employment for her in his shop. When Patience graduated from school at the age of 17, plans to join her uncle in Lagos began to take shape. Her parents gave her money for a journey across countries, and her uncle sent instructions detailing how to get from Hohoe to Lagos. He advised her to acquire a passport and a yellow fever vaccination certificate, neither of which was difficult to get. She also needed to pool together enough money for her transportation, feeding, and various unforeseen expenses such as border-crossing fees. Patience would need to cross three <strong style="color: #FC6944;">borders</strong> and pass through numerous <strong style="color: #dba11c;">milestones</strong> on her way to Lagos.
+          In 2002, an opportunity arose when her uncle visited for Christmas and invited her to come to Lagos after graduating from Secondary School. He promised to provide both accommodation and employment for her in his shop. When Patience graduated from school at the age of 17, plans to join her uncle in Lagos began to take shape. Her parents gave her money for a journey across countries, and her uncle sent instructions detailing how to get from Hohoe to Lagos. He advised her to acquire a passport and a yellow fever vaccination certificate, neither of which was difficult to get. She also needed to pool together enough money for her transportation, feeding, and various unforeseen expenses such as border-crossing fees. Patience would need to cross three <strong style="color: #FC6944;">borders</strong> and pass through numerous <strong style="color: #dba11c;">milestones</strong> on her way to Lagos.
         </p>
 
     </section>
@@ -268,6 +275,31 @@
             </div>
 
             <article>
+                <!-- <div class="step">
+                       <h1>Hohoe, Volta Region, Ghana</h1>
+                       <p>
+                       Patience's journey began in 2003, when she left Hohoe Municipality, in Ghana's Volta Region. Prior to leaving, she lived in Hohoe with her siblings and parents, who are farmers. Hohoe is an administrative district with a population of over 100,000 people. It shares a border with Togo to the east.
+                       </p>
+                       </div>
+
+                       <div class="step" data-center="0.47773, 7.15319" data-zoom="6" data-pitch="45.00" data-bearing="0.00">
+                       <p>
+                       Due to Hohoe's proximity to the Togo border, Patience had grown up alongside community members who crossed the border frequently for work. She also knew various people who traveled to work across more distant parts of the region, including an uncle who had moved to Lagos, Nigeria.
+                       </p>
+                       </div>
+
+                       <div class="step" data-center="0.47401, 7.15187" data-zoom="11" data-pitch="45.00" data-bearing="0.00">
+                       <p>
+                       The prospect of travel had frequently presented itself, and Patience dreamed of leaving Hohoe and living in a big city. In 2002, an opportunity arose when her uncle visited for Christmas and invited her to come to Lagos after graduating from Secondary School. He promised to provide both accommodation and employment for her in his shop.
+                       </p>
+                       </div>
+
+                       <div class="step" data-center="1.20005, 6.11355" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.5">
+                       <p>
+                       When Patience graduated from school at the age of 17, plans to join her uncle in Lagos began to take shape. Her parents gave her money for a journey across countries, and her uncle sent instructions detailing how to get from Hohoe to Lagos. He advised her to acquire a passport and a yellow fever vaccination certificate, neither of which was difficult to get. She also needed to pool together enough money for her transportation, feeding, and various unforeseen expenses such as border-crossing fees. Patience would need to cross three borders to get to Lagos.
+                       </p>
+                       </div> -->
+
                 <div class="step" data-center="0.47773, 7.15319" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
                 </div>
 
@@ -419,6 +451,8 @@
         });
 
         map.on('load', () => {
+            // Add a geojson point source.
+            // Heatmap layers also work with a vector tile source.
             map.addSource('milestones', {
                 'type': 'geojson',
                 'data': './data/milestones.geojson'
@@ -434,7 +468,7 @@
                 'data': './data/borders.geojson'
             });
 
-            // Route
+            // Add a Line
             map.addLayer({
                 'id': 'route',
                 'type': 'line',
@@ -446,13 +480,13 @@
                 'minzoom': 4,
                 'maxzoom': 15,
                 'paint': {
-                    'line-color': '#0077c8',
-                    'line-width': 5,
-                    'line-opacity': 0.7
+                  'line-color': '#0077c8',
+                  'line-width': 5,
+                  'line-opacity': 0.7
                 }
             });
 
-            // Milestones Markers
+            // Add Milestones Markers
             map.addLayer({
                     'id': 'milestones-overview',
                     'type': 'circle',
@@ -460,11 +494,11 @@
                     'minzoom': 4,
                     'maxzoom': 8,
                     'paint': {
-                        'circle-radius': 12,
-                        'circle-color': '#dba11c',
-                        'circle-opacity': 0.7
+                      'circle-radius': 12,
+                      'circle-color': '#dba11c',
+                      'circle-opacity': 0.7
                     }
-                }
+            }
 
             );
 
@@ -475,15 +509,15 @@
                     'minzoom': 8,
                     'maxzoom': 15,
                     'paint': {
-                        'circle-radius': 10,
-                        'circle-color': '#dba11c',
-                        'circle-opacity': 0.9
+                      'circle-radius': 10,
+                      'circle-color': '#dba11c',
+                      'circle-opacity': 0.9
                     }
-                }
+            }
 
             );
 
-            // Borders
+            // Add Borders
             map.addLayer({
                     'id': 'borders-overview',
                     'type': 'circle',
@@ -491,11 +525,11 @@
                     'minzoom': 4,
                     'maxzoom': 8,
                     'paint': {
-                        'circle-radius': 12,
-                        'circle-color': '#FC6944',
-                        'circle-opacity': 0.7
+                      'circle-radius': 12,
+                      'circle-color': '#FC6944',
+                      'circle-opacity': 0.7
                     }
-                }
+            }
 
             );
 
@@ -506,11 +540,11 @@
                     'minzoom': 8,
                     'maxzoom': 15,
                     'paint': {
-                        'circle-radius': 10,
-                        'circle-color': '#FC6944',
-                        'circle-opacity': 0.9
+                      'circle-radius': 10,
+                      'circle-color': '#FC6944',
+                      'circle-opacity': 0.9
                     }
-                }
+            }
 
             );
 

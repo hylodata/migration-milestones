@@ -7,7 +7,7 @@ var config = {
     title: "Patience at the Border",
     subtitle: '',
     byline: '',
-    footer: 'Source: CERC Migration, 2022. Data from <a href="http://losingtime.ca">Toronto Metropolitan University</a>',
+    footer: 'Source: <a href="https://www.torontomu.ca/cerc-migration/">CERC Migration at Toronto Metropolitan University</a>',
     chapters: [{
             id: 'home',
             hidden: true,
@@ -22,7 +22,7 @@ var config = {
                 bearing: 0.00,
                 speed: 0.2,
                 curve: 1
-            },
+            }
         },
         {
             id: 'home2',
@@ -95,6 +95,24 @@ var config = {
                 speed: 0.5,
                 curve: 1
             },
+            onChapterEnter: [{
+                    layer: 'patience',
+                    opacity: 0.25
+                },
+                {
+                    layer: 'patienceDark',
+                    opacity: 0.75
+                }
+            ],
+            onChapterExit: [{
+                    layer: 'patience',
+                    opacity: 0.8
+                },
+                {
+                    layer: 'patienceDark',
+                    opacity: 0
+                }
+            ]
         },
         {
             id: 'lome2003b',
