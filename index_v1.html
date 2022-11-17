@@ -27,12 +27,59 @@
             color: #0071bc;
         }
 
-        article {
+        #map {
+            width: 100%;
+            height: 100%;
             position: relative;
-            padding: 0;
-            max-width: 25rem;
-            margin: 0 auto;
         }
+
+        #intro {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #introText {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: justify;
+            padding: 2.5vw;
+            font-size: 1.25vw;
+            text-indent: 2em;
+        }
+
+        #intro__text {
+            max-width: 40rem;
+            margin: 1rem auto;
+            text-align: left;
+            margin-bottom: 60px;
+        }
+
+        .intro__hed {
+            max-width: 40rem;
+            margin: 1rem auto 2rem auto;
+            text-align: center;
+        }
+
+     .intro__dek {
+       max-width: 40rem;
+       margin: 1rem auto 2rem auto;
+       text-align: left;
+       /* color: #8a8a8a; */
+     }
+     
+     article {
+       position: relative;
+       padding: 0;
+       max-width: 25rem;
+       margin: 0 auto;
+     }
 
         .sticky-thing {
             position: -webkit-sticky;
@@ -209,13 +256,53 @@
 
 <body>
 
-    <div id="map"></div>
-    <div id="mapInset"></div>
+    <div id="intro">
+        <div id="introImage">
+            <h1 class="title">Patience at the Border</h1>
+            <p class="subtitle">
+                This scrolling story from CERC Migration traces the journey of an economic migrant from Ghana as she travels across borders, space, and time. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
+            </p>
+            <img id="originalImage" src="./video/cutcity.gif" alt="">
+        </div>
+    </div>
+
+    <div class="spacer">
+        <i>"After I graduated from secondary school in 2003, I decided to travel to Nigeria because my uncle who lived in Lagos offered me a place to stay and a job as an apprentice in a tailor shop..."</i>
+    </div>
+
+    <section id="intro__text">
+        <!-- <h1 class="intro__hed">Leaving Hohoe</h1> -->
+        <h1 class="intro__hed">The Initial Journey: 2002-2008</h1>
+        <p class="intro__dek">
+            Patience's journey began in 2003, when she left Hohoe Municipality, in Ghana's Volta Region. Prior to leaving, she lived in Hohoe with her siblings and parents, who are farmers. Hohoe is an administrative district with a population of over 100,000 people. It shares a border with Togo to the east. Due to Hohoe's proximity to the Togo border, Patience had grown up alongside community members who crossed the border frequently for work. She also knew various people who traveled to work across more distant parts of the region, including an uncle who had moved to Lagos, Nigeria. The prospect of travel had frequently presented itself, and Patience dreamed of leaving Hohoe and living in a big city.
+        </p>
+        <div>
+            <img class="bg" src="./images/work.jpg" alt="">
+        </div>
+        <p class="intro__dek">
+          In 2002, an opportunity arose when her uncle visited for Christmas and invited her to come to Lagos after graduating from Secondary School. He promised to provide both accommodation and employment for her in his shop. When Patience graduated from school at the age of 17, plans to join her uncle in Lagos began to take shape. Her parents gave her money for a journey across countries, and her uncle sent instructions detailing how to get from Hohoe to Lagos. He advised her to acquire a passport and a yellow fever vaccination certificate, neither of which was difficult to get. She also needed to pool together enough money for her transportation, feeding, and various unforeseen expenses such as border-crossing fees. Patience would need to cross three <strong style="color: #FC6944;">borders</strong> and pass through numerous <strong style="color: #dba11c;">milestones</strong> on her way to Lagos.
+        </p>
+    </section>
+
+        <main>
+        <section id="scrollSection">
+            <div class="mapDiv">
+              <div id='map'></div>
+            </div>
+	    
+	    <!-- <div id="map"></div> -->
+
+	    <article>
+	      <div id="mapInset"></div>
     <div id="story"></div>
 
     <script src="./js/config.js"></script>
     <script src="./js/layout.js"></script>
 
+            </article>
+        </section>
+	</main>
+	
     <!-- <div class="sticky-thing">
          <p>lorem ipsum</p>
 	 </div> -->
