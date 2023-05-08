@@ -14,243 +14,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* @font-face {
-	font-family: "Replica";
-	src: url("./font/ReplicaStd-Regular.otf");
-	} */
-
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
-            overflow-x: hidden;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        #map {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-
-        #intro {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #introText {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: justify;
-            padding: 2.5vw;
-            font-size: 1.25vw;
-            text-indent: 2em;
-        }
-
-        #intro__text {
-            max-width: 40rem;
-            margin: 1rem auto;
-            text-align: left;
-            margin-bottom: 60px;
-        }
-
-        .intro__hed {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: center;
-        }
-
-        .intro__dek {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: left;
-            /* color: #8a8a8a; */
-        }
-
-        #outro__text {
-            max-width: 40rem;
-            margin: 1rem auto;
-            text-align: left;
-        }
-
-        .outro__hed {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: center;
-        }
-
-        .outro__dek {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: left;
-            /* color: #8a8a8a; */
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            /* font-size: 1.75vw; */
-            color: rgba(0, 76, 155, 0.8);
-            font-weight: 600;
-        }
-
-        .title {
-            font-size: 3vw;
-            color: #fafafa;
-            background-color: rgba(0, 76, 155, 0.9);
-            /* opacity: 0.9; */
-            padding: 3vh 3vw;
-            font-weight: 400;
-            text-align: center;
-            position: absolute;
-            left: 50%;
-            top: 40%;
-            transform: translate(-50%, -50%);
-        }
-
-        .subtitle {
-            font-size: 1.25vw;
-            color: #fafafa;
-            background-color: rgba(0, 76, 155, 0.9);
-            /* opacity: 0.9; */
-            padding: 3vh 3vw;
-            font-weight: 400;
-            text-align: center;
-            position: absolute;
-            max-width: 600px;
-            left: 50%;
-            top: 75%;
-            transform: translate(-50%, -50%);
-        }
-
-        .spacer {
-            height: 20vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 1.25vw;
-            padding: 80px 100px 30px 100px;
-        }
-
-        #introImage {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #bodyImage {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .img-responsive {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Scrollama Stuff */
-
-        #scrollSection {
-            position: relative;
-        }
-
-        article {
-            position: relative;
-            /* max-width: 33vw; */
-            max-width: 800px;
-            margin: auto;
-            /* margin: 0 0 0 0vw; */
-        }
-
-        .mapDiv {
-            position: sticky;
-            width: 100%;
-            height: 100vh;
-            z-index: 0;
-            top: 0vh;
-        }
-
-        .step {
-            margin: 0 0 50vh 0;
-            text-align: center;
-            color: #fff;
-            padding: 1rem;
-            font-size: 1.3rem;
-            border-radius: 10px;
-        }
-
-        .stepImage {
-            margin: 10px auto 20px;
-            display: block;
-            width: 95%;
-            height: auto;
-        }
-
-        .step.is-active p {
-            border-radius: 5px;
-            background-color: rgba(0, 76, 155, 0.9);
-            padding: 1.5rem;
-            color: #3b3b3b5;
-        }
-
-        .step:last-child {
-            margin-bottom: 0;
-        }
-
-        .bg {
-            /* Full height */
-            width: 100%;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #outroImage {
-            height: 100%;
-            width: 100%;
-            margin: 3rem 0 0 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .invisible {
-            background-color: rgba(0, 0, 0, 0);
-        }
-    </style>
-
+    <link href="css/default.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
     <div id="intro">
         <div id="introImage">
-            <h1 class="title">Knowledge is power: Ali’s journey through many borders</h1>
+            <h1 class="title">Knowledge is Power: Ali's Journey Across Many Borders</h1>
             <p class="subtitle">
-                This scrolling story from CERC Migration traces the journey of an economic migrant named Ali as he travels from Togo across borders, space, and time in search of new opportunities. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
+                This scrolling story from CERC Migration traces the journey of a migrant named Ali as he travels from Burkina Faso to Nigeria across borders, space, and time. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
             </p>
             <img id="originalImage" src="./video/ouagadougou.gif" alt="">
         </div>
     </div>
 
     <div class="spacer">
-        <i>“I was working in Burkina Faso when a team from All-Africa, a media company, came for a 2004 Francophonie meeting in Ouagadougou, where all the Francophone countries met. In 2005, I was asked to come to Nigeria by All-Africa, but I was doing my master’s degree then so I had to wait and finish before I traveled. They were looking for someone to come and run the program for them.”</i>
+        <i>"I was working in Burkina Faso when a team from All-Africa, a media company, came for a 2004 Francophonie meeting in Ouagadougou, where all the Francophone countries met. In 2005, I was asked to come to Nigeria by All-Africa, but I was doing my master’s degree then so I had to wait and finish before I traveled. They were looking for someone to come and run the program for them."</i>
     </div>
+
+    <section id="intro__text">
+        <p class="intro__dek">
+        <div>
+            <img class="bg" src="./images/ali.jpg" alt="">
+        </div>
+        </p>
+    </section>
 
     <main>
         <section id="scrollSection">
@@ -267,40 +56,39 @@
                 </div>
 
                 <div class="step" data-center="1.5197, 12.3714" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Opportunity Came Knocking: Starting out from Ouagadougou, Burkina Faso</h1>
+                    <h1>Opportunity Came Knocking</h1>
                     <p>
-                        Ali is from Burkina Faso. He was working and completing a master’s degree in Law at the University of <strong style="color: #dba11c;">Ouagadougou</strong> in 2004 when he was approached by media company All-Africa seeking to open a branch in the city of Lagos. He finished his degree before heading to Lagos to accept the job. He had never been to Nigeria before and was very curious to see what Nigeria was like but he was also hesitant because of the uncertainty of not knowing what to expect. He moved from Ouagadougou to Lagos in 2005 by road with all the required documents for his journey.
-                        <img class="stepImage" src="./images/ali.jpg" alt="">
+                        Ali is from Burkina Faso. He was working and completing a master's degree in Law at the University of Ouagadougou in 2004, when he was approached by a media company named All-Africa, which was seeking to open a branch in the city of Lagos, Nigeria. Ali finished his degree before heading to Lagos to accept the job. He had never been to Nigeria before, and was very curious to see what it was like, but he was also hesitant because of the uncertainty of not knowing what to expect. He moved from Ouagadougou to Lagos in 2005, traveling by road with all the requisite documents he would need.
                     </p>
                 </div>
 
                 <div class="step">
-                    <h1>Traveling through many borders</h1>
+                    <h1>Traveling Across Many Borders</h1>
                     <p>
-                        There are many borders between Burkina Faso and Nigeria. Ali sometimes drives through Ivory Coast, Ghana, Togo and Benin to get to Nigeria. Sometimes he takes the longer route, which is through Ivory Coast and other times, he goes through Togo or Benin. Because of these numerous borders, he has a wealth of experience about freedom of movement in the region.
+                        There are many borders between Burkina Faso and Nigeria. Ali drove through Ivory Coast, Ghana, Togo and Benin to get to his destination. At times, he took a longer route through Ivory Coast; other times, he went through Togo or Benin. Because of the numerous borders, he developed a wealth of experience about freedom of movement in the region.
                         <img class="stepImage" src="./images/travel.jpg" alt="">
                     </p>
                 </div>
 
                 <div class="step">
-                    <h1>Threatened at the border in Benin</h1>
+                    <h1>Threatened at the Border in Benin</h1>
                     <p>
-                        Trained to be a lawyer, Ali is cognizant of ECOWAS freedom of movement rights. As a result, he often challenges immigration officers at the borders whenever he sees extortion or harassment. His outspokenness has gotten him into standoffs with officers a few times.
+                        Trained to be a lawyer, Ali is cognizant of ECOWAS freedom of movement rights. As a result, he often challenges immigration officers at the borders whenever he encounters extortion or harassment. His outspokenness has gotten him into standoffs with officers a few times.
                         <img class="stepImage" src="./images/threat.jpg" alt="">
                     </p>
 
-                    <p>Press the play button to hear Ali talking about the intimidation he faced at the Beninois border on the way to Lagos.</p>
-
-                    <audio controls>
-                        <source src="./audio/ali_border.ogg" type="audio/ogg">
-                        Your browser does not support the audio element.
-                    </audio>
+                    <p style="background-color: rgba(104, 71, 141, 0.9);">Press the play button to hear Ali talking about the intimidation he faced at the Beninois border on the way to Lagos.</br></br>
+                        <audio controls>
+                            <source src="./audio/ali_border.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </p>
                 </div>
 
                 <div class="step">
-                    <h1>Knowing the rules helps</h1>
+                    <h1>Knowing the Rules</h1>
                     <p>
-                        Ali’s knowledge has helped him navigate through the barriers and difficulties at the borders in the region. This has not only saved him money and time, but also saved other people who were stuck at those borders too. Ali often tries to advocate for people who are being exploited by officers.
+                        Ali's knowledge has helped him navigate through barriers and difficulties at the borders in the region. This has not only saved him money and time, but also saved other people who were stuck at those borders as well. Ali often tries to advocate for people who are being exploited by officers.
                         <img class="stepImage" src="./images/rules.jpg" alt="">
                     </p>
 
@@ -313,17 +101,19 @@
                 </div>
 
                 <div class="step">
-                    <p>
-                        <i>
-                            “Because I am a trained lawyer and journalist, I know the rules and I know that when you are an ECOWAS citizen. There is nothing like a payment to stamp your passport for you to cross provided you have all your documentation and medical stuff. You are free to move, but they are not doing that at the borders.”
-                        </i>
+                  <p>
+		    <img class="stepImageAvatar" src="./images/ali_illustrated.png" alt="">
+                    <i>
+                        "Because I am a trained lawyer and journalist, I know the rules, and I know that when you are an ECOWAS citizen, there is nothing like a payment to 'stamp your passport' for you to cross - provided you have all your documentation and medical stuff. You are free to move, but they are not doing that at the borders."
+                    </i>
                     </p>
                 </div>
 
                 <div class="step" data-center="3.3711, 6.5095" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Working in Yaba and setting up a business</h1>
+                    <h1>Working in Yaba</h1>
                     <p>
-                        Ali worked in Yaba, a popular suburb on the Lagos Mainland, known to have many educational institutions. While working in media, he also tapped into the need for French education in the city. He taught journalism to students in the French department at the University of Lagos (UNILAG). He also established a french language news program as well. His job in media takes him all over the continent and he has had stints in Kenya, Tunisia, Senegal, Ethiopia, Cameroon and other places.
+                        Once in Nigeria, Ali worked in Yaba, a popular suburb on the Lagos Mainland, which is known to have many educational institutions. While working in media, he also tapped into the need for French education in the city. He taught journalism to students in the French department at the University of Lagos (UNILAG). He also established a French language news program. His job in media takes him all over the continent, and he has had stints in Kenya, Tunisia, Senegal, Ethiopia, Cameroon, and elsewhere.
+
                         <img class="stepImage" src="./images/yaba.jpg" alt="">
                     </p>
 
@@ -337,120 +127,122 @@
 
                 <div class="step">
                     <p>
-                      <i>
-                        “In 2009, I set up my own business in media communication, which is mainly bi-lingual communication. I do translations. I do media reports, and I do fixing; fixing is helping media people who are coming for a report in Nigeria to get in touch with relevant stakeholders, people to interview and to conduct media reports.”
-                      </i>
+                        <i>
+                            "In 2009, I set up my own business in media communication, which is mainly bilingual communication. I do translations. I do media reports. And I do fixing. Fixing is helping media people who are coming for a report in Nigeria to get in touch with relevant stakeholders, people to interview, and to conduct media reports."
+                        </i>
                     </p>
                 </div>
 
                 <div class="step">
-                  <p>
-		    Ali works with a diverse media clientele including Nigerian media, a Moroccan TV station in Abuja, Voice of America, France 24 and TV5, as well as Swiss and German media in the region.
-                  </p>
+                    <p>
+                        Ali works with a diverse clientele, including Nigerian media, a Moroccan TV station in Abuja, Voice of America, France 24 and TV5, as well as Swiss and German media in the region.
+                    </p>
                 </div>
 
                 <div class="step" data-center="3.4333, 6.4500" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                  <h1>Settling in the City</h1>
-                  <p>
-		    As time passed, Ali tried to adapt to life in Lagos. He lived in Dolphin Estate, one of the first gated communities in Lagos Island. He was supposed to leave Nigeria and join the All-Africa office in Dakar, Senegal but he did not like the idea of moving from Lagos because the project he was doing at UNILAG was very fascinating. Without him, the project would have stopped. The French Embassy and the university asked him to stay and he negotiated the terms of his stay and remained in Lagos. 
-                    <img class="stepImage" src="./images/city.jpg" alt="">
+                    <h1>Settling in the City</h1>
+                    <p>
+                        As time passed, Ali tried to adapt to life in Lagos. He lived in Dolphin Estate, one of the first gated communities in Lagos Island. He was supposed to leave Nigeria and join the All-Africa office in Dakar, Senegal, but he did not like the idea of moving from Lagos because the project he was doing at UNILAG was very fascinating. Without him, the project would have stopped. The French Embassy and the university asked him to stay, and he negotiated the terms and remained in Lagos.
+
+                        <img class="stepImage" src="./images/city.jpg" alt="">
                     </p>
                 </div>
 
                 <div class="step">
-                  <h1>Freedom of movement rights at the borders </h1>
-                  <p>
-                    Because of the demands of work, Ali travels a lot by road and crosses many borders in the region in the process. He has made it a habit to address the issues he finds at the borders whenever he travels.
-                    <img class="stepImage" src="./images/freedom.jpg" alt="">
+                    <h1>Freedom of Movement</h1>
+                    <p>
+                        Because of the demands of work, Ali travels a lot by road and crosses many regional borders in the process. He has made it a habit to address the issues he finds at the borders whenever he travels.
+
+                        <img class="stepImage" src="./images/freedom.jpg" alt="">
                     </p>
 
                     <p>Listen to Ali describing another confrontation immigration officer at the border.</p>
 
                     <audio controls>
-                      <source src="./audio/ali_confrontation.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
+                        <source src="./audio/ali_confrontation.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
                     </audio>
 
                     <p>Listen to Ali describing the reality at the border.</p>
 
                     <audio controls>
-                      <source src="./audio/ali_reality.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
-                    </audio>		    
+                        <source src="./audio/ali_reality.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
 
 
                 <div class="step">
-                  <h1>The struggles at the border are region-wide</h1>
-                  <p>
-                    In Ali’s experience, difficulties at the border are region-wide and happen even at the Burkina Faso border. 
-                    <img class="stepImage" src="./images/struggles.jpg" alt="">
+                    <h1>Region-Wide Struggles at the Border</h1>
+                    <p>
+                        In Ali's experience, difficulties at the border are region-wide, and even occur at the Burkina Faso border.
+                        <img class="stepImage" src="./images/struggles.jpg" alt="">
                     </p>
 
                     <p>Listen to Ali describing another his experiences in different places.</p>
 
                     <audio controls>
-                      <source src="./audio/ali_experiences1.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
+                        <source src="./audio/ali_experiences1.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
                     </audio>
 
                     <audio controls>
-                      <source src="./audio/ali_experiences2.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
-                    </audio>		    
+                        <source src="./audio/ali_experiences2.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
 
                 <div class="step" data-center="3.5852, 6.4698" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                  <h1>Education and Community in Lagos</h1>
-                  <p>
-		    After many years of living and working in Lagos, Ali feels at home. He went back to school in Lagos and received a Master’s Degree in Business from the Lagos Business School in Lekki, Lagos Island in 2015. He is an active member in the Burkinabe community in Lagos. In 2018, he was elected to be the Secretary General of the Association of Burkinabe Residents in Nigeria and he was also the consular delegate in Lagos to the Conseil supérieur des Burkinabè de l’étranger (CSBE). 
-                    <img class="stepImage" src="./video/lagos.gif" alt="">
-                  </p>
+                    <h1>Education and Community in Lagos</h1>
+                    <p>
+                        After many years of living and working in Lagos, Ali feels at home. In 2015, he went back to school and received a Master’s Degree in Business from the Lagos Business School in Lekki, Lagos Island. He is an active member in the Burkinabe community in Lagos. In 2018, he was elected to be the Secretary General of the Association of Burkinabe Residents in Nigeria, and he was also the consular delegate in Lagos to the Conseil supérieur des Burkinabè de l’étranger (CSBE).
+                        <img class="stepImage" src="./video/lagos.gif" alt="">
+                    </p>
                 </div>
 
                 <div class="step">
-                  <h1>The Burkinabe Community </h1>
-                  <p>
-                    As the Secretary General of the Association of Burkinabe Residents in Nigeria, Ali encourages and informs people in the community on how to abide by the immigration rules, how to register their businesses, among other things. In Nigeria, people generally don’t ask for documentation or where people come from - they assume Burkinabe people are from Northern Nigeria. 
-                    <img class="stepImage" src="./images/burkinabe.jpg" alt="">
+                    <h1>The Burkinabe Community </h1>
+                    <p>
+                        As the Secretary General of the Association of Burkinabe Residents in Nigeria, Ali encourages and informs people in the community about how to abide by the immigration rules, how to register their businesses, and a host of related things. In Nigeria, people generally don't ask for documentation or where people come from - they assume Burkinabe people are from Northern Nigeria.
+                        <img class="stepImage" src="./images/burkinabe.jpg" alt="">
                     </p>
 
                     <p>Listen to Ali describing the Burkinabe community in Nigeria.</p>
 
                     <audio controls>
-                      <source src="./audio/ali_burkinabe1.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
+                        <source src="./audio/ali_burkinabe1.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
                     </audio>
 
                     <audio controls>
-                      <source src="./audio/ali_burkinabe2.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
-                    </audio>		    
-                </div>		
-
-                <div class="step">
-		  <p>
-		    <i>
-		      “People ask if I am from Sokoto and I say no. I say I am from Burkina Faso and they are surprised. To me, it is a very open society, people are welcoming.”
-		    </i>
-		  </p>
+                        <source src="./audio/ali_burkinabe2.ogg" type="audio/ogg">
+                        Your browser does not support the audio element.
+                    </audio>
                 </div>
 
                 <div class="step">
-                  <h1>Thriving in another West African City</h1>
-                  <p>
-                    Ali came to Lagos with the initial aim of spending only two years and going back to Ouagadougou. However, he got inspired and found things that could better his professional experience in Lagos. This is part of the reason why he chose to attend Lagos Business School and get an MBA. 
-                    <img class="stepImage" src="./images/thriving.jpg" alt="">
+                    <p>
+                        <i>
+                            "People ask if I am from Sokoto and I say no. I say I am from Burkina Faso, and they are surprised. To me, it is a very open society. People are welcoming."
+                        </i>
+                    </p>
+                </div>
+
+                <div class="step">
+                    <h1>Thriving in Another West African City</h1>
+                    <p>
+                        Ali came to Lagos with the initial aim of spending only two years and then going back to Ouagadougou. However, he got inspired and found things that could improve his professional experience. This is part of the reason why he chose to attend Lagos Business School and get an MBA.
+                        <img class="stepImage" src="./images/thriving.jpg" alt="">
                     </p>
 
-                    <p>Listen to Ali talking about the importance of the ECOWAS regional market and what it means for regional trade and migration.</p>
+                    <p>Listen to Ali talking about the importance of the ECOWAS regional market and what it means for regional trade and migration. </br></br>
+                        <audio controls>
+                            <source src="./audio/ali_ecowas.ogg" type="audio/ogg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </p>
+                </div>
 
-                    <audio controls>
-                      <source src="./audio/ali_ecowas.ogg" type="audio/ogg">
-                      Your browser does not support the audio element.
-                    </audio>	    
-                </div>			
-		
                 <div class="step invisible">
                 </div>
 
@@ -464,17 +256,18 @@
         </section>
 
         <section id="outro__text">
-            <h1 class="outro__hed">Plans for the future</h1>
+            <h1 class="outro__hed">Plans for the Future</h1>
             <p class="outro__dek">
-                Ali plans on maximizing the knowledge he has gained from his time as a journalist and fixer in Nigeria and taking his using it for the betterment of Burkina Faso and the region. Freedom of movement in the region has been one factors that have been crucial to his career success in media and business.
+                Ali plans on maximizing the knowledge he has gained from his time as a journalist and fixer in Nigeria by using it for the betterment of Burkina Faso and the broader region. Freedom of movement in the region has been one factor that has been crucial to his career success in media and business.
             </p>
 
-            <p>Press the play button to hear Ali talking about his future plans</p>
-
-            <audio controls>
+            <p style="text-align: center;">Press the play button to hear Ali talking about his future plans</p>
+	    <p style="text-align: center;">
+              <audio controls>
                 <source src="./audio/ali_future.ogg" type="audio/ogg">
                 Your browser does not support the audio element.
-            </audio>
+              </audio>
+	    </p>
         </section>
 
         <div>
@@ -510,12 +303,12 @@
 
             map.addSource('route', {
                 'type': 'geojson',
-                'data': './data/fullRoute.geojson'
+                'data': './data/ali_route.geojson'
             });
 
             map.addSource('borders', {
                 'type': 'geojson',
-                'data': './data/borders.geojson'
+                'data': './data/ali_borders.geojson'
             });
 
             // Route

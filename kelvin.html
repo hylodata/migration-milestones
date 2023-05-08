@@ -14,226 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <style>
-        /* @font-face {
-	font-family: "Replica";
-	src: url("./font/ReplicaStd-Regular.otf");
-	} */
-
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            width: 100vw;
-            overflow-x: hidden;
-            font-family: 'Open Sans', sans-serif;
-        }
-
-        #map {
-            width: 100%;
-            height: 100%;
-            position: relative;
-        }
-
-        #intro {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #introText {
-            width: 50%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: justify;
-            padding: 2.5vw;
-            font-size: 1.25vw;
-            text-indent: 2em;
-        }
-
-        #intro__text {
-            max-width: 40rem;
-            margin: 1rem auto;
-            text-align: left;
-            margin-bottom: 60px;
-        }
-
-        .intro__hed {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: center;
-        }
-
-        .intro__dek {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: left;
-            /* color: #8a8a8a; */
-        }
-
-        #outro__text {
-            max-width: 40rem;
-            margin: 1rem auto;
-            text-align: left;
-        }
-
-        .outro__hed {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: center;
-        }
-
-        .outro__dek {
-            max-width: 40rem;
-            margin: 1rem auto 2rem auto;
-            text-align: left;
-            /* color: #8a8a8a; */
-        }
-
-        h1 {
-            font-size: 1.5rem;
-            /* font-size: 1.75vw; */
-            color: rgba(0, 76, 155, 0.8);
-            font-weight: 600;
-        }
-
-        .title {
-            font-size: 3vw;
-            color: #fafafa;
-            background-color: rgba(0, 76, 155, 0.9);
-            /* opacity: 0.9; */
-            padding: 3vh 3vw;
-            font-weight: 400;
-            text-align: center;
-            position: absolute;
-            left: 50%;
-            top: 40%;
-            transform: translate(-50%, -50%);
-        }
-
-        .subtitle {
-            font-size: 1.25vw;
-            color: #fafafa;
-            background-color: rgba(0, 76, 155, 0.9);
-            /* opacity: 0.9; */
-            padding: 3vh 3vw;
-            font-weight: 400;
-            text-align: center;
-            position: absolute;
-            max-width: 600px;
-            left: 50%;
-            top: 75%;
-            transform: translate(-50%, -50%);
-        }
-
-        .spacer {
-            height: 20vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 1.25vw;
-            padding: 80px 100px 30px 100px;
-        }
-
-        #introImage {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #bodyImage {
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .img-responsive {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Scrollama Stuff */
-
-        #scrollSection {
-            position: relative;
-        }
-
-        article {
-            position: relative;
-            /* max-width: 33vw; */
-            max-width: 800px;
-            margin: auto;
-            /* margin: 0 0 0 0vw; */
-        }
-
-        .mapDiv {
-            position: sticky;
-            width: 100%;
-            height: 100vh;
-            z-index: 0;
-            top: 0vh;
-        }
-
-        .step {
-            margin: 0 0 50vh 0;
-            text-align: center;
-            color: #fff;
-            padding: 1rem;
-            font-size: 1.3rem;
-            border-radius: 10px;
-        }
-
-        .stepImage {
-            margin: 10px auto 20px;
-            display: block;
-            width: 95%;
-            height: auto;
-        }
-
-        .step.is-active p {
-            border-radius: 5px;
-            background-color: rgba(0, 76, 155, 0.9);
-            padding: 1.5rem;
-            color: #3b3b3b5;
-        }
-
-        .step:last-child {
-            margin-bottom: 0;
-        }
-
-        .bg {
-            /* Full height */
-            width: 100%;
-            /* Center and scale the image nicely */
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        #outroImage {
-            height: 100%;
-            width: 100%;
-            margin: 3rem 0 0 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .invisible {
-            background-color: rgba(0, 0, 0, 0);
-        }
-    </style>
-
+    <link href="css/default.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -242,14 +23,14 @@
         <div id="introImage">
             <h1 class="title">Escaping Election Crisis: Kelvin’s Journey from Aného to Lagos</h1>
             <p class="subtitle">
-                This scrolling story from CERC Migration traces the journey of an economic migrant named Kelvin as he travels from Togo across borders, space, and time in search of new opportunities. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
+                This scrolling story from CERC Migration traces the journey of a migrant named Kelvin who escapes political violence and travels as he travels from Togo to Nigeria across borders, space, and time. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
             </p>
             <img id="originalImage" src="./video/lake_togo.gif" alt="">
         </div>
     </div>
 
     <div class="spacer">
-        <i>“I come from Lacs Prefecture, Maritime region. I am from a town called Aného. I came to Nigeria in 2005 after the presidential elections on the 24th of April. After the elections, there was a crisis. That’s when I left Togo for Nigeria.”</i>
+        <i>"I come from Lacs Prefecture, Maritime region. I am from a town called Aného. I came to Nigeria in 2005 after the presidential elections on the 24th of April. After the elections, there was a crisis. That's when I left Togo for Nigeria."</i>
     </div>
 
     <section id="intro__text">
@@ -265,30 +46,28 @@
             </div>
 
             <article>
-                <div class="step" data-center="1.5814, 6.2273" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Setting out from Aného, Lacs Prefecture, Maritime region, Togo</h1>
-                    <!-- data-toggle_layer="route" -->
+                <div class="step" data-center="1.5814, 6.2273" data-zoom="10" data-pitch="45" data-bearing="0" data-speed="0.7">
                 </div>
 
                 <div class="step invisible">
                 </div>
 
-                <div class="step" data-center="1.2130, 6.1774" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Post-election Violence displaces Kelvin in Lomé</h1>
+                <div class="step" data-center="1.2130, 6.1774" data-zoom="10" data-pitch="45" data-bearing="0" data-speed="0.7">
+                    <h1>Post-Election Violence Displaces Kelvin in Lomé</h1>
                     <p>
-                        Kelvin is from the town of <strong style="color: #dba11c;">Aného</strong>, located in southeast Togo in Lacs Prefecture, Maritime Region. He was in his sophomore year at the University of Lomé during the Presidential elections on April 24, 2005. The elections took place on a Sunday and violence broke out in the Togolese capital after a winner was announced.
+                        Kelvin is from the town of <strong style="color: #dba11c;">Aného</strong>, located in southeast Togo in Lacs Prefecture, Maritime Region. He was in his sophomore year at the University of Lomé during the Presidential elections on April 24, 2005. The elections took place on a Sunday, and violence broke out in the Togolese capital after a winner was announced.
                         <img class="stepImage" src="./images/violence.jpg" alt="">
                     </p>
                 </div>
 
                 <div class="step">
                     <p>
-                        Kelvin got a call from a friend early on Monday morning asking him to leave campus because votes were not counted and fighting had led to the deaths of some people. Because movement was almost impossible by Tuesday, Kelvin was advised to leave immediately. He left campus and headed out of the capital by 4 AM Monday morning.
+                        Kelvin got a call from a friend early on the following Monday asking him to leave campus because votes were not counted and fighting had led to the deaths of some people. Because movement was almost impossible by Tuesday, Kelvin was advised to leave immediately. He left campus and headed out of the capital by 4 AM Monday morning.
                     </p>
                 </div>
 
                 <div class="step">
-                    <h1>The journey from out of Lomé</h1>
+                    <h1>The Journey out of Lomé</h1>
                     <p>
                         <i>“It was hell because there were no buses. By that time because of the crisis, everywhere was blocked and people were burning tires everywhere.”</i>
                     </p>
@@ -302,29 +81,30 @@
                 </div>
 
                 <div class="step" data-center="1.6100, 6.2300" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Crossing the Mono River and Seme border</h1>
+                    <h1>Crossing the Mono River and Seme Border</h1>
                     <p>
-                        He crossed the river to get to Benin. He didn’t pass through the land border for safety reasons. After crossing the Mono River into Benin, Kelvin took a bus to the Seme border. Kelvin’s river-crossing experience was terrible.
+                        He crossed the river to get to Benin. He didn’t pass through the land border for safety reasons. After crossing the Mono River into Benin, Kelvin took a bus to the Seme border. His river-crossing experience was terrible
+                        .
                         <img class="stepImage" src="./images/mono.jpg" alt="">
                     </p>
                 </div>
 
                 <div class="step" data-center="3.315929, 6.4624" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
                     <p>
-                        When he got to the border, he didn’t have enough money cross. He had to sell the only possession of value that he had with him – his Nokia 3310 mobile phone. The man that carried him to Seme bought the phone from him, paying for it in CFA, which Kelvin then had to convert to Naira. He had contacts in Nigeria, so he called them to tell them he was coming. Traveling without a passport is a reality for many people in the Maritime region. As a result, there are often both formal and informal pathways for migration. In the 1980s and 1990s, it was easier for people like Paul to travel without a passport. However, traveling without one has become increasingly difficult over the years. Documentation requirements have become stricter since then and harassment and extortion has been on the rise.
+                        When he got to the border, he didn’t have enough money to cross. He had to sell the only possession of value that he had with him – his Nokia 3310 mobile phone. The man that carried him to Seme bought the phone from him, paying for it in CFA, which Kelvin then had to convert to Naira. He had contacts in Nigeria, so he called them to tell them he was coming.
                     </p>
                 </div>
 
                 <div class="step">
                     <p>
-                        <i>“I had some family members who live in Nigeria. I called them and they gave me directions. They told the driver I met at Seme to drop me at Mile 2 because that was my first time coming to Lagos and that I would see flags (there are flags of Togo, Benin, Ghana and so on) so he dropped me there and I waited until they came to pick me and took me to Ikotun. It was very late in the night.”</i>
+                        <i>“I had some family members who live in Nigeria. I called them and they gave me directions. They told the driver I met at Seme to drop me at Mile 2 - because that was my first time coming to Lagos - and that I would see flags (there are flags of Togo, Benin, Ghana and so on), so he dropped me there and I waited until they came to pick me and took me to Ikotun. It was very late in the night.”</i>
                     </p>
                 </div>
 
 
 
                 <div class="step" data-center="3.2506, 6.5631" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Career transitions: Bricklaying to French translation to teaching in Ikotun</h1>
+                    <h1>Bricklaying to Teaching</h1>
                     <p>
                         <i>“When I came as a foreigner in a new land, there was no job, and my English was not that fluent, so I had to stay indoors a lot.”</i>
                         <img class="stepImage" src="./images/bricklaying.jpg" alt="">
@@ -333,21 +113,21 @@
 
                 <div class="step">
                     <p>
-                        Kelvin stayed in Ikotun, a neighbourhood on the Mainland, located in Alimosho Local Government Area in Lagos State. Kelvin struggled to find a job because he was not fluent in English so he stayed home for months. He began to try to make friends in order to find opportunities. He made friends with some bricklayers and worked two gigs doing bricklaying on construction sites. He eventually got the contact of a teacher at Queen Maris College in Ikotun who was looking for someone fluent in French to help with a French language book publication. Kelvin started working with him. They published a book called <<ça y est>> which means “That’s it.” The teacher introduced Kelvin to a few schools and Kelvin started to teach French part-time.
+                        Kelvin stayed in Ikotun, a neighbourhood on the Mainland, located in Alimosho Local Government Area in Lagos State. Kelvin struggled to find a job because he was not fluent in English, so he stayed home for months. He began to try to make friends in order to find opportunities, befriending a group of bricklayers and working two gigs on construction sites. He eventually got the contact of a teacher at Queen Maris College in Ikotun who was looking for someone fluent in French to help with a French language book publication. Kelvin started working with him, and they published a book called "ça y est" (which means “That’s it”). The teacher introduced Kelvin to a few schools, and Kelvin started to teach French part-time.
                     </p>
                 </div>
 
                 <div class="step" data-center="3.05082, 6.5022063" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <h1>Finding work in other parts of the city</h1>
+                    <h1>Finding Work in Other Parts of the City</h1>
                     <p>
-                        <img class="stepImage" src="./images/teacher.png" alt="">
+                        <img class="stepImage" src="./images/teacher.jpg" alt="">
                         Kelvin left the Ikotun area and moved to Ago and continued to tutor at other schools there. Eventually, he became a full-time French teacher.
                     </p>
                 </div>
 
                 <div class="step" data-center="3.3898, 6.5158" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
                     <p>
-                        After that, he organized a series of seminars in different locations, some at the University of Lagos (UNILAG), where he received a certificate . He also met people in Alausa who work at the West African Examination Council Office and those contacts enabled him to access some of the schools he worked at.
+                        After that, he organized a series of seminars in different locations, some at the University of Lagos (UNILAG), where he received a certificate. He also met people in Alausa who work at the West African Examination Council Office and those contacts enabled him to access some of the schools he worked at.
                     </p>
                 </div>
 
@@ -357,30 +137,29 @@
                     </p>
                 </div>
 
-                <div class="step" data-center="3.3137, 6.5088" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
-                    <p>
-                        He was living in Ikotun area, then he moved from there to Okota because of the cost of rent.
-                    </p>
-                </div>
+                <!-- <div class="step" data-center="3.3137, 6.5088" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
+                     <p>
+                     He was living in Ikotun area, then he moved from there to Okota because of the cost of rent.
+                     </p>
+                     </div> -->
 
                 <div class="step">
-                    <h1>Stuckedness: The impact of economic downturn</h1>
+                    <h1>Stuck in an Economic Downturn</h1>
                     <p>
                         <img class="stepImage" src="./images/naira.jpg" alt="">
                         <i>
                             “From 2006 when I started teaching, the economy was okay because then, if you took N1000, it could give you 5000 CFA but today, it is hell because since that time, my employer has not been increasing my salary. I have been earning the same amount, the same currency to change and when you change it to CFA, it’s like you have nothing on top. Before, when I changed Naira to CFA and took it home to Togo, it meant something, but now nothing is moving at all.”
                         </i>
                         </br></br>
-                        Because of the downward spiral of the Nigerian economy, Kelvin has been unable to travel home since 2017 because of the high cost of travelling and crossing the border. Instead of spending the money to transport himself, he prefers to send the money home to Aného.
+                        Because of the downward spiral of the Nigerian economy, Kelvin has been unable to travel home since 2017 because of the high cost of travelling and crossing the border. Instead of spending the money to transport himself, he prefers to send the money home to Aného. </br></br>
                         <i>“I prefer to send money to Togo because if you look at what it will cost to go back to see the family, the best thing to do is to send money instead. The transport fare has increased, coupled with the bad road now from Mile 2 to Seme and the stress on the road from officers. It is hell. So, I think changing money and sending it to Togo is preferable than going there myself.”</i>
-                        He sends money to his parents and siblings in Togo when they need it.
                     </p>
                 </div>
 
                 <div class="step" data-center="3.3227, 6.5372" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
                     <h1>Community in Isolo</h1>
                     <p>
-                        <img class="stepImage" src="./images/community.jpg" alt="">
+                        <img class="stepImage" src="./images/church.jpg" alt="">
                         Kelvin is a member of Great Shepherd Evangelical Mission, a Togolese church in Lagos. It is a very large church that has different branches, and has its headquarters in Oshodi and Surulere. The branch he attends in Isolo is a small but very diverse one.
                     </p>
                 </div>
@@ -395,20 +174,16 @@
                     <h1>Making Isolo Home</h1>
                     <p>
                         <img class="stepImage" src="./images/okeafa.jpg" alt="">
-                        Kelvin feels at home in Oke-Afa, his neighbourhood in Isolo.
-                    </p>
-                </div>
-
-                <div class="step">
-                    <p>
+                        Kelvin feels at home in his Isolo neighbourhood, Oke-Afa.
+                        </br></br>
                         <i>“There’s no discrimination here, we do things together, where I live here are Yoruba and Igbo people, and we do things together, so I feel at home. I can talk to anybody here because they know me in this environment. I have worked in the schools in the neighbourhood where I help 3 to 5-year-old students as a tutor, so I move freely. I don’t feel like a stranger.”</i>
                     </p>
                 </div>
 
                 <div class="step">
                     <p>
-                        Kelvin came to Lagos as a single person, and then met a Togolese woman who was born and raised in Ikotun, Lagos who became his fiancée. She helped him to settle in, assisting him with drafting his CV and application letter in English, for example. </br></br>
-                        <i>“We finally got married. When things are difficult, she reminds me that this is Lagos, this is Nigeria, and this is how things work here and this helps me to stay focused. We have children now.”</i>
+                        Kelvin came to Lagos as a single person, and then met a Togolese woman from Ikotun who became his fiancée. She helped him to settle in, assisting him with drafting his CV and application letter in English. </br></br>
+                        <i>“We finally got married. When things are difficult, she reminds me that this is Lagos, this is Nigeria, and this is how things work here - and this helps me to stay focused. We have children now.”</i>
                     </p>
                 </div>
 
@@ -424,6 +199,13 @@
             </article>
         </section>
 
+        <section>
+            <div class="spacer">
+                <i>“Being in Nigeria is a long-term project because we are here already. Going back is out of the question, if you don’t have something tangible, you will suffer and you will rush back because those who are in Togo are used to living there. If you go back, you will be starting afresh. I know people who tried to return to Togo, but they came back to Nigeria. If you go back, you have to make sure you have your own house and you have things arranged before you move. If I ever return to Togo, it will be twenty years from now.”
+                </i>
+            </div>
+        </section>
+
         <section id="outro__text">
             <h1 class="outro__hed">Looking Ahead</h1>
             <p class="outro__dek">
@@ -432,11 +214,6 @@
                 Kelvin is used to life in Nigeria and has grown to love it because he has built a career, started a family and joined a close-knit community there.
             </p>
         </section>
-
-        <div class="spacer">
-            <i>“Being in Nigeria is a long-term project because we are here already. Going back is out of the question, if you don’t have something tangible, you will suffer and you will rush back because those who are in Togo are used to living there. If you go back, you will be starting afresh. I know people who tried to return to Togo, but they came back to Nigeria. If you go back, you have to make sure you have your own house and you have things arranged before you move. If I ever return to Togo, it will be twenty years from now.”
-            </i>
-        </div>
 
         <div>
             <img id="outroImage" src="./video/looking_ahead.gif" alt="">
@@ -471,12 +248,12 @@
 
             map.addSource('route', {
                 'type': 'geojson',
-                'data': './data/fullRoute.geojson'
+                'data': './data/kelvin_route.geojson'
             });
 
             map.addSource('borders', {
                 'type': 'geojson',
-                'data': './data/borders.geojson'
+                'data': './data/kelvin_borders.geojson'
             });
 
             // Route
