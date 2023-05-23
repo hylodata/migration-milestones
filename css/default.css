@@ -120,16 +120,18 @@ h1 {
   font-size: 1.5rem;
   color: #fafafa;
   background-color: rgba(0, 76, 155, 0.9);
-  /* opacity: 0.9; */
   padding: 1vh 1vw;
   border-radius: 5px;
+  font-weight: 600;
+  margin: auto;
+  width: fit-content;
+  /* opacity: 0.9; */
   /* font-weight: 400; */
   /* text-align: center; */
   /* position: absolute; */
   /* left: 50%; */
   /* top: 40%; */
   /* transform: translate(-50%, -50%); */
-  font-weight: 600;
 }
 
 .spacer {
@@ -187,7 +189,7 @@ article {
 
 .step {
   margin: 0 0 50vh 0;
-  text-align: center;
+  /* text-align: center; */
   color: #fff;
   padding: 1rem;
   font-size: 1.3rem;
@@ -199,6 +201,7 @@ article {
   display: block;
   width: 95%;
   height: auto;
+  filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
 }
 
 .stepImageSolo {
@@ -235,6 +238,24 @@ article {
   background-repeat: no-repeat;
   background-size: cover;
   filter: drop-shadow(0.25rem 0.25rem 0.5rem #000000);
+}
+
+.strongBorder {
+    background-color: #dba11c;
+    padding: .1px 5px;
+    border-radius: 3px;
+}
+
+.strongMilestone {
+    background-color: #FC6944;
+    padding: .1px 5px;
+    border-radius: 3px;
+}
+
+.strongRoute {
+    background-color: #0077c8;
+    padding: .1px 5px;
+    border-radius: 3px;
 }
 
 #outroImage {
