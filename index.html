@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Migration Milestones</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            background-color: black;
+            height: 100%;
+            margin: 0;
+            font-family: Arial;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("./images/aissetou_route_green.png");
+
+            /* Full height */
+            /* height: 100%;
+	*/
+            /* Center and scale the image nicely */
+            background-position: center;
+            /* background-repeat: no-repeat; */
+            background-size: cover;
+        }
+
+        /* Center website */
+        .main {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 50px;
+            word-break: break-all;
+            background-color: white;
+            color: black;
+            padding: 10px;
+            width: fit-content;
+        }
+
+     .row {
+       margin: 8px -16px;
+     }
+
+        /* Add padding BETWEEN each column */
+        .row,
+        .row>.column {
+            padding: 8px;
+        }
+
+        /* Create four equal columns that floats next to each other */
+        .column {
+            float: left;
+            width: 50%;
+        }
+
+        /* Clear floats after rows */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Content */
+        .content {
+            background-color: white;
+            padding: 10px;
+        }
+
+     .container_image {
+       float: left;
+       position: relative;
+       /* background-color: lightblue;
+          border: 1px solid gray;
+          margin-top: 100px;
+          margin-left: 150px; */
+       margin-bottom: 15px;
+       padding: 3px;
+
+       -webkit-transform: scale(1, 1);
+       -webkit-transition-timing-function: ease-out;
+       -webkit-transition-duration: 250ms;
+       -moz-transform: scale(1, 1);
+       -moz-transition-timing-function: ease-out;
+       -moz-transition-duration: 250ms;
+     }
+
+        .container_image:hover {
+            cursor: pointer;
+
+            -webkit-transform: scale(1.55, 1.57);
+            -webkit-transition-timing-function: ease-out;
+            -webkit-transition-duration: 250ms;
+            -moz-transform: scale(1.02, 1.04);
+            -moz-transition-timing-function: ease-out;
+            -moz-transition-duration: 250ms;
+            position: relative;
+            z-index: 99;
+        }
+
+        .container_image a {
+            margin-top: 5px;
+            display: block;
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+            text-align: center;
+            visibility: visible;
+            opacity: 1;
+
+        }
+
+        .container_image:hover a {
+            visibility: visible;
+            opacity: 1;
+
+
+
+        }
+
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        @media screen and (max-width: 900px) {
+            .column {
+                width: 50%;
+            }
+        }
+
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="bg"> -->
+
+    <!-- MAIN (Center website) -->
+    <div class="main">
+
+        <h1>Migration Milestones</h1>
+
+        <div class="content">
+	  <div class="container_image">
+	    <a href="patience.html"><img src="./images/patience.png" alt="Patience" style="width: 50%; float: left"></a>
+	    <a href="patience.html"><img src="./images/patience_route.png" alt="Patience" style="width: 50%; float: right"></a>
+	  </div>
+          <!-- <a href="patience.html"><img src="./images/patience.png" alt="Patience" style="width: 50%; float: left"></a>
+               <a href="patience.html"><img src="./images/patience_route.png" alt="Patience" style="width: 50%; float: right"></a> -->
+            <h3>Patience</h3>
+            <p>Follow the story of an economic migrant named Patience as she travels from Ghana to Nigeria across borders, space, and time in search of new opportunities.</p>
+        </div>
+
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+            <div class="column">
+                <div class="content">
+                    <a href="aissetou.html"><img src="./images/aissetou.jpg" alt="Aissetou" style="width:100%"></a>
+                    <h3>Aissetou</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <img src="./images/aissetou_route.png" alt="Aissetou's Journey" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <a href="paul.html"><img src="./images/paul.png" alt="Paul" style="width:100%"></a>
+                    <h3>Paul</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <img src="./images/aissetou_route.png" alt="Aissetou's Journey" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <a href="kelvin.html"><img src="./images/kelvin.jpg" alt="Kelvin" style="width:100%"></a>
+                    <h3>Kelvin</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus nece\ssitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <img src="./images/aissetou_route.png" alt="Aissetou's Journey" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="content">
+                    <a href="ali.html"><img src="./images/ali.jpg" alt="Ali" style="width:100%"></a>
+                    <h3>Ali</h3>
+                    <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    <img src="./images/aissetou_route.png" alt="Aissetou's Journey" style="width:100%">
+                </div>
+            </div>
+            <!-- END GRID -->
+        </div>
+
+        <!-- END MAIN -->
+    </div>
+
+    </div>
+
+</body>
+
+</html>
