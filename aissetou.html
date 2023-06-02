@@ -25,7 +25,7 @@
             <p class="subtitle">
                 This scrolling story from CERC Migration traces the journey of Aissetou as she travels from Benin across borders, space, and time in search of new opportunities. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
             </p>
-            <img id="originalImage" src="./video/tradercut.gif" alt="">
+            <img id="originalImage" src="./video/aissetou.gif" alt="">
         </div>
     </div>
 
@@ -209,16 +209,17 @@
                 <i>"You can carry things to sell in the market from morning to evening and they will pay you only 500 Naira. If you work for someone and the boss is a good boss, he will give you food but if he is not good, he won’t, and you will have to spend from the 500 Naira to eat. If your child falls sick, it is from that money you will spend to treat them."</i>
             </p>
 
-            <p>Press the play button to hear an interview with Aissetou</p>
-
-            <audio controls>
-                <source src="./audio/aissetou.ogg" type="audio/ogg">
-                Your browser does not support the audio element.
-            </audio>
-
             <p class="outro__dek">
               Despite all the challenges of migration, settling and integration, Aissetou still wanted to stay in Lagos because this is what her family had come to know as home.
             </p>
+
+            <p style="text-align: center;">Press the play button to hear an interview with Aissetou</p>
+	    <p style="text-align: center;">
+              <audio controls>
+                <source src="./audio/aissetou.ogg" type="audio/ogg">
+                Your browser does not support the audio element.
+              </audio>
+	    </p>
 
         </section>
 
@@ -255,7 +256,7 @@
         map.on('load', () => {
             map.addSource('milestones', {
                 'type': 'geojson',
-                'data': './data/milestones.geojson'
+                'data': './data/aissetou_milestones.geojson'
             });
 
             map.addSource('route', {
