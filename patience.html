@@ -19,7 +19,6 @@
 
 <body>
 
-    <div id="intro">
         <div id="introImage">
             <h1 class="title">The High Cost of Travel: Patience's Journey to Lagos</h1>
             <p class="subtitle">
@@ -27,17 +26,14 @@
             </p>
             <img id="originalImage" src="./video/cutcity.gif" alt="">
         </div>
-    </div>
 
     <div class="spacer">
         <i>"After I graduated from secondary school in 2003, I decided to travel to Nigeria because my uncle who lived in Lagos offered me a place to stay and a job as an apprentice in a tailor shop..."</i>
     </div>
 
-    <section id="intro__text">
-        <div>
-            <img class="bg" src="./images/work.jpg" alt="">
-        </div>
-    </section>
+    <div id="intro__text">
+        <img class="bg" src="./images/work.jpg" alt="">
+    </div>
 
     <main>
         <section id="scrollSection">
@@ -278,7 +274,7 @@
         map.on('style.load', () => {
             map.setFog({});
             map.scrollZoom.disable();
-            map.dragPan.enable()
+            map.dragPan.disable()
             map.dragRotate.disable()
         });
 
