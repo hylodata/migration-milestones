@@ -213,8 +213,29 @@ h3 {
 
 .footer .column {
     background: white;
-    width: 50%;
+    width: 33%;
     height: 10%;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgba(0, 76, 155)  
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
 }
 
 /* .footer .row a{ */
