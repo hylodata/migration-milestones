@@ -40,7 +40,8 @@ html {
   text-align: left;
   padding-left: 16px;
   text-decoration: none;
-  font-size: 17px;  
+  font-size: 17px;
+  padding-top: 14px;
 }
 
 .nav a:hover {
@@ -116,13 +117,13 @@ h1 {
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: .9rem;
     text-align: center;
     /* font-size: 1.75vw; */
     color: rgba(0, 76, 155, 0.8);
     font-weight: 400;
     word-break: break-all;
-    padding: 10px;
+    padding: 20px;
     /* background-color: white; */
     /* color: black; */
     /* padding: 2px; */
@@ -213,6 +214,8 @@ h3 {
     width: 100%;
     text-align: center;
     font-size: 17px;
+    position:absolute;
+    bottom: 0;
 }
 
 .footer .row {

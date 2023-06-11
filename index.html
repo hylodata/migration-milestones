@@ -11,32 +11,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
 
     <link href="css/index.css" rel="stylesheet" type="text/css">
-
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-6S9NB0YG7R');
-    </script>
+    <link href="css/carousel.css" rel="stylesheet">
 
 </head>
 
 <body>
-    <!-- <nav>
-       <div class="logo">
-       <img src="https://www.torontomu.ca/etc.clientlibs/ryecms/static/clientlib-site/resources/images/tmu_logo.svg" />
-       </div>
-       <ul class="list-item">
-       <li><a href="about.html">About the Project</a></li>
-       <li><a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a></li>
-       </ul>
-       </nav> -->
 
     <div class="nav" id="topNav">
         <div class="navRow">
@@ -48,106 +31,86 @@
                 <a href="about.html">About the Project</a>
                 <a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
+                  <i class="fa fa-bars"></i>
                 </a>
             </div>
         </div>
     </div>
-
-    <!-- MAIN (Center website) -->
-    <div class="main">
-        <!-- <h1 class="title">Migration Milestones</h1> -->
-        <!-- style="background-color: rgba(0, 76, 155, 0.95); color: #fafafa; padding: 10px; font-weight: 400; font-style: italic;" -->
-        <h3>Click below to follow the journeys of five migrants as they travel across borders, space and time in search of new opportunities</h3>
-    </div>
-    <!-- margin-top:-33px; -->
-    <!-- END MAIN -->
-
-    <div class="migrantgallery">
-        <div>
-            <div class="row slickgallery slick-initialized slick-slider"><button class="slick-prev slick-arrow" aria-label="Previous" type="button" style="">Previous</button>
-                <div class="slick-list draggable" style="padding: 0px 10%;">
-                    <div class="slick-track" style="opacity: 1; width: 2000px; transform: translate3d(-699px, 0px, 0px);">
-
-                        <div class="slick-slide slick-cloned" data-slick-index="0" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="patience.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/patience.jpeg">
-                                    <div class="description">journey as she navigates borders between Ghana to Nigeria to finally set up a shop of her own</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Patience's</div>
-                                    </div>
-                                </a></div>
+  
+    <section id="slider">
+        <div class="container">
+            <div class="subcontainer">
+                <div class="slider-wrapper">
+                    <div class="main">
+		      <h3>Click below to follow the journeys of five migrants as they travel across borders, space and time in search of new opportunities</h3>
+		    </div>
+                    <div class="my-slider">
+		      
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-1">
+                                  <a href="patience.html">Follow Patience as she navigates borders between Ghana to Nigeria to finally set up a shop of her own.</a>
+                                </div>
+                                <!-- <div>
+                                     <h3>Patience</h3>
+                                     <p>Journey</p>
+                                     </div> -->
+                            </div>
                         </div>
-                        <div class="slick-slide slick-cloned" data-slick-index="1" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="aissetou.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/aissetou.jpeg">
-                                    <div class="description">travels as she follows her dream to build a good life in Lagos</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Aissetou's</div>
-                                    </div>
-                                </a></div>
+			
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-2">
+                                  <a href="aissetou.html">Trace Aissetou’s journey as she follows her dream to build a good life in Lagos.</a>
+                                </div>
+                                <!-- <div>
+                                     <h3>Aissetou</h3>
+                                     <p>Route</p>
+                                     </div> -->
+                            </div>
                         </div>
-                        <div class="slick-slide slick-cloned" data-slick-index="2" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="paul.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/paul_cropped.jpeg">
-                                    <div class="description">journey to escape political violence in Togo and build a career as a mechanic</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Paul's</div>
-                                    </div>
-                                </a></div>
+			
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-3">
+                                  <a href="paul.html">Join Paul on his journey to escape political violence in Togo and build a career as a mechanic.</a>
+                                </div>
+                                <!-- <div>
+                                     <h3>Paul</h3>
+                                     <p>Travel</p>
+                                     </div> -->
+                            </div>
                         </div>
-                        <div class="slick-slide slick-cloned" data-slick-index="3" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="kelvin.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/kelvin.jpeg">
-                                    <div class="description">story, from when he flees the University of Lomé, to when he finally calls Isolo home</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Kelvin's</div>
-                                    </div>
-                                </a></div>
-                        </div>
-                        <div class="slick-slide slick-cloned slick-active" data-slick-index="4" id="" aria-hidden="false" style="width: 233px;" tabindex="-1">
-                            <div><a href="ali.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="0"><img src="images/homepage/ali.jpeg">
-                                    <div class="description">travels across multiple borders along his route from Burkina Faso to Nigeria</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Ali's</div>
-                                    </div>
-                                </a></div>
-                        </div>
-                        <div class="slick-slide slick-cloned" data-slick-index="5" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="patience.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/patience.jpeg">
-                                    <div class="description">travels as she follows her dream to build a good life in Lagos</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Patience</div>
-                                    </div>
-                                </a></div>
-                        </div>
-                        <div class="slick-slide slick-cloned" data-slick-index="6" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="aissetou.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/aissetou.jpeg">
-                                    <div class="description">travels as she follows her dream to build a good life in Lagos</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Aissetou</div>
-                                    </div>
-                                </a></div>
-                        </div>
-                        <div class="slick-slide slick-cloned" data-slick-index="7" id="" aria-hidden="true" style="width: 233px;" tabindex="-1">
-                            <div><a href="paul.html" class="migrant" style="width: 100%; display: inline-block;" tabindex="-1"><img src="images/homepage/paul_cropped.jpeg">
-                                    <div class="description">journey to escape political violence in Togo and build a career as a mechanic</div>
-                                    <div class="diagonal-box"></div>
-                                    <div class="info">
-                                        <div class="name">Paul</div>
-                                    </div>
-                                </a></div>
+			
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-4">
+                                  <a href="kelvin.html">Follow Kelvin's story, from when he flees the University of Lomé, to when he finally calls Isolo home.</a>
+                                </div>
+                                <!-- <div>
+                                     <h3>Kelvin</h3>
+                                     <p>Journey</p>
+                                     </div> -->
+                            </div>
                         </div>
 
+                        <div>
+                            <div class="slide">
+                                <div class="slide-img img-5">
+                                  <a href="ali.html">Read about Ali's travels across multiple borders along his route from Burkina Faso to Nigeria.</a>
+                                </div>
+                                <!-- <div>
+                                     <h3>Ali</h3>
+                                     <p>Journey</p>
+                                     </div> -->
+                            </div>
+                        </div>			
+			
                     </div>
                 </div>
-                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
             </div>
         </div>
-    </div>
+    </section>
 
     <footer>
         <div class="footer">
@@ -170,7 +133,9 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>    
+
+    <script src="js/slider.js"></script>
 
 </body>
 
