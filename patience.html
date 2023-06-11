@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
@@ -14,19 +14,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="css/default.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-        <div id="introImage">
-            <h1 class="title">The High Cost of Travel: Patience's Journey to Lagos</h1>
-            <p class="subtitle">
-                This scrolling story from CERC Migration traces the journey of a migrant named Patience as she travels from Ghana across borders, space, and time in search of new opportunities. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
-            </p>
-            <img id="originalImage" src="./video/cutcity.gif" alt="">
-        </div>
+    <div class="topnav" id="myTopnav">
+      <!-- <a>MIGRATION MILESTONES</br>Data-Driven Stories Documenting Freedom of Movement From Below</a> -->
+        <a href="patience.html" class="active">Patience's Journey</a>
+        <a href="about.html">About the Project</a>
+        <a href="#contact">Return to CERC Migration</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <div id="introImage">
+        <h1 class="title">The High Cost of Travel: Patience's Journey to Lagos</h1>
+        <p class="subtitle">
+            This scrolling story from CERC Migration traces the journey of a migrant named Patience as she travels from Ghana across borders, space, and time in search of new opportunities. </br> </br> <img id="originalImage" src="./images/down.png" alt="">
+        </p>
+        <img id="originalImage" src="./video/cutcity.gif" alt="">
+    </div>
 
     <div class="spacer">
         <i>"After I graduated from secondary school in 2003, I decided to travel to Nigeria because my uncle who lived in Lagos offered me a place to stay and a job as an apprentice in a tailor shop..."</i>
@@ -201,7 +212,7 @@
                 <div class="step" data-center="-0.20325, 5.56000" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
                 </div>
 
-		<div class="step invisible">
+                <div class="step invisible">
                 </div>
 
                 <div class="step" data-center="3.32218, 6.52815" data-zoom="12" data-pitch="45" data-bearing="0" data-speed="0.7">
@@ -244,10 +255,10 @@
         </section>
 
         <section id="outro__text">
-          <p class="outro__dek">
-            This story is part of the <a href="index.html">Migration Milestones</a> research project, led by postdoctoral research fellow Oreva Olakpe, through the <a href="index.html">CERC in Migration and Integration</a> at Toronto Metropolitan University. The research was generously supported by the Canada Excellence Research Chairs (CERC) program.</br></br>
-            <img src="./images/cerc_migration_logo.svg" alt="">
-            <img src="./images/cerc_logo.png" alt="">
+            <p class="outro__dek">
+                This story is part of the <a href="index.html">Migration Milestones</a> research project, led by postdoctoral research fellow Oreva Olakpe, through the <a href="index.html">CERC in Migration and Integration</a> at Toronto Metropolitan University. The research was generously supported by the Canada Excellence Research Chairs (CERC) program.</br></br>
+                <img src="./images/cerc_migration_logo.svg" alt="">
+                <img src="./images/cerc_logo.png" alt="">
                 </br></br>
                 Click <a href="aissetou.html">here</a> to read the next story in this series and <a href="index.html">here</a> to return to the project home.
         </section>
@@ -466,6 +477,17 @@
         }
 
         init();
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
 </body>

@@ -109,11 +109,13 @@ h1 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: center;
     /* font-size: 1.75vw; */
     color: rgba(0, 76, 155, 0.8);
-    font-weight: 600;
+    font-weight: 400;
     word-break: break-all;
+    padding: 10px;
     /* background-color: white; */
     /* color: black; */
     /* padding: 2px; */
@@ -214,7 +216,7 @@ h3 {
 .footer .column {
     background: white;
     width: 33%;
-    height: 10%;
+    height: 10%;    
 }
 
 .responsive {
@@ -230,7 +232,7 @@ h3 {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  color: rgba(0, 76, 155)  
+  color: rgba(0, 76, 155);  
 }
 
 /* Add a hover effect if you want */
@@ -573,7 +575,7 @@ h3 {
 .migrantgallery {
     /* background: #949989; */
     /* margin-top: 50px; */
-    padding-top: 50px;
+    padding-top: 1px;
     width: 100%;
     overflow: hidden;
     max-width: 1200px;
@@ -645,12 +647,12 @@ h3 {
     padding: 0 10px;
     transition: all .5s;
     opacity: 0;
-    height: 55px;
+    height: 155px;
     font-size: 15px;
     background: rgba(0, 76, 155, 0.9);
     text-align: center;
     position: absolute;
-    top: calc(100% - 55px);
+    top: calc(100% - 155px);
     width: calc(100% - 10px);
 }
 
@@ -659,7 +661,7 @@ h3 {
 }
 
 .migrantgallery .migrant:hover .info {
-    bottom: 55px;
+    bottom: 155px;
     background: rgba(0, 76, 155, 0.9);
 }
 
@@ -677,13 +679,15 @@ h3 {
     bottom: 37px;
     padding: 10px;
     width: calc(100% - 10px);
-    background: rgba(200, 10, 155, 0.5);
+    background: rgba(0, 76, 155, 0.9);
     text-align: center;
     border-top: 3px solid rgba(0, 76, 155, 0.9);
 }
 
+/* background: rgba(200, 10, 155, 0.5) */
+
 .migrantgallery .migrant .info .name {
-    font-family: 'Bebas Neue', cursive;
+    /* font-family: 'Bebas Neue', cursive; */
     text-transform: uppercase;
     color: #D5EDED;
     font-size: 40px;
