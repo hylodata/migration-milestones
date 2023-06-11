@@ -15,28 +15,44 @@
     <link href="css/index.css" rel="stylesheet" type="text/css">
 
     <script>
-     window.dataLayer = window.dataLayer || [];
-     function gtag(){dataLayer.push(arguments);}
-     gtag('js', new Date());
-     
-     gtag('config', 'G-6S9NB0YG7R');
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-6S9NB0YG7R');
     </script>
-    
+
 </head>
 
 <body>
-    <nav>
-        <div class="logo">
-            <img src="https://www.torontomu.ca/etc.clientlibs/ryecms/static/clientlib-site/resources/images/tmu_logo.svg" />
+    <!-- <nav>
+       <div class="logo">
+       <img src="https://www.torontomu.ca/etc.clientlibs/ryecms/static/clientlib-site/resources/images/tmu_logo.svg" />
+       </div>
+       <ul class="list-item">
+       <li><a href="about.html">About the Project</a></li>
+       <li><a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a></li>
+       </ul>
+       </nav> -->
+
+    <div class="nav" id="topNav">
+        <div class="navRow">
+            <div class="navColumn">
+                <h2>MIGRATION MILESTONES</br>Data-Driven Stories Documenting Freedom of Movement From Below
+                </h2>
+            </div>
+            <div class="navColumn">
+                <a href="about.html">About the Project</a>
+                <a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
-        <!-- <div class="icon">
-             <span class="toggle">☰</span>
-             </div> -->
-        <ul class="list-item">
-            <li><a href="about.html">About the Project</a></li>
-            <li><a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a></li>
-        </ul>
-    </nav>
+    </div>
 
     <!-- MAIN (Center website) -->
     <div class="main">
@@ -128,11 +144,9 @@
 
                     </div>
                 </div>
-		<button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
+                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="">Next</button>
             </div>
         </div>
-    </div>
-
     </div>
 
     <footer>
@@ -140,33 +154,22 @@
             <div class="row">
                 <div class="column">
                     <p>All content copyright ⓒ 2023:</p>
-                    <a href="#"><img src="./images/cerc_migration_logo.svg" alt=""></a>
+                    <a href="https://www.torontomu.ca/cerc-migration/"><img src="./images/cerc_migration_logo.png" alt="" class="responsive"></a>
                 </div>
                 <div class="column">
                     <p>Connect with us on:</p>
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-youtube"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="https://www.facebook.com/CERCMigrationFB/" class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/cercmigration" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCBcfqDImsyxBRh-McHi34ew" class="fa fa-youtube"></a>
+                    <a href="https://www.instagram.com/cercmigration/?hl=en" class="fa fa-instagram"></a>
+                    <a href="https://www.linkedin.com/school/cerc-in-migration-and-integration/" class="fa fa-linkedin"></a>
                 </div>
                 <div class="column">
                     <p>The CERC in Migration and Integration is generously supported by:</p>
-                    <a href="#"><img src="./images/cerc_logo.png" alt="" class="responsive"></a>
+                    <a href="https://www.cerc.gc.ca/home-accueil-eng.aspx"><img src="./images/cerc_logo.png" alt="" class="responsive"></a>
                 </div>
             </div>
         </div>
-        <!-- <div class="row" style="background-color: rgba(0, 76, 155); color: white;">
-             <div class="column" style="width: 33%; text-align: center;">
-             <p>Copyright © 2023 Toronto Metropolitan University</p>
-             </div>
-             <div class="column" style="width: 33%; text-align: center;">
-             <p>Sources: Alamy, iStock.</p>
-             </div>
-             <div class="column" style="width: 33%; text-align: center;">
-             <p>Content: Oreva Olakpe, Laura Matthew, Grace Esford, Gabby Resch</p>
-             </div>
-             </div> -->
     </footer>
 
 </body>

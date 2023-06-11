@@ -13,21 +13,36 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link href="css/default.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 
-    <div id="intro">
-        <div id="introImage">
-            <video class="bgVideo" src="./video/border.mp4" muted="" loop="" autoplay="" playsinline=""></video>
-            <h1 class="title">Migration Milestones</h1>
-            <p class="subtitle">
-                A selection of data-driven stories documenting freedom of movement from below. </p>
-            <!-- <img id="originalImage" src="./video/cutcity.gif" alt=""> -->
+    <div class="nav" id="topNav">
+        <div class="row">
+            <div class="column">
+                <h2>MIGRATION MILESTONES</br>Data-Driven Stories Documenting Freedom of Movement From Below
+                </h2>
+            </div>
+            <div class="column">
+                <a href="about.html" class="active">About the Project</a>
+                <a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="fa fa-bars"></i>
+                </a>
+            </div>
         </div>
     </div>
+
+    <!-- <div id="introImage">
+         <!-- <video class="bgVideo" src="./video/border.mp4" muted="" loop="" autoplay="" playsinline=""></video>
+         <h1 class="title">Migration Milestones</h1>
+         <p class="subtitle">
+         A selection of data-driven stories documenting freedom of movement from below. </p> -->
+         <!-- <img id="originalImage" src="./video/cutcity.gif" alt="">
+	      </div>  -->
 
     <main>
 
@@ -121,6 +136,33 @@
             </p>
         </section>
     </main>
+
+    <div class="nav" id="bottomNav">
+        <div class="row">
+            <div class="column">
+                <a href="index.html" style="float: left;">
+                    < Home</a>
+            </div>
+            <div class="column">
+                <!-- <a href="patience.html" class="active">Patience's Journey</a> -->
+              <a href="patience.html">Patience's Story ></a>
+              <!-- <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		   <i class="fa fa-bars"></i>
+		   </a> -->
+            </div>
+        </div>
+    </div>    
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 
 </body>
 
