@@ -87,7 +87,7 @@
                 <div class="step" data-center="2.3912, 6.3703" data-zoom="11" data-pitch="45" data-bearing="0" data-speed="0.7">
                     <h1 class="sectionHeading">To Cotonou by Car</h1>
                     <p>
-                        Within a short drive from Bassila, Aissetou’s bus crossed through <strong class="strongMilestone">Cotonou</strong>, Benin’s largest city.
+                        Within a short drive from Bassila, Aissetou's car crossed through <strong class="strongMilestone">Cotonou</strong>, Benin’s largest city.
                         <img class="stepImage" src="./images/highway.jpg" alt="">
                     </p>
                 </div>
@@ -281,12 +281,12 @@
         map.on('style.load', () => {
             map.setFog({});
             map.scrollZoom.disable();
-            map.dragPan.enable()
-            map.dragRotate.disable()
+          map.dragPan.disable()
+          map.dragRotate.disable()
         });
 
-        map.on('load', () => {
-            map.addSource('milestones', {
+     map.on('load', () => {
+       map.addSource('milestones', {
                 'type': 'geojson',
                 'data': './data/aissetou_milestones.geojson'
             });
@@ -469,6 +469,17 @@
         }
 
         init();
+    </script>
+
+    <script>
+     function myFunction() {
+       var x = document.getElementById("myTopnav");
+       if (x.className === "topnav") {
+         x.className += " responsive";
+       } else {
+         x.className = "topnav";
+       }
+     }
     </script>
 
 </body>

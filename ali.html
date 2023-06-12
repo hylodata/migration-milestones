@@ -24,13 +24,13 @@
     <div class="nav" id="topNav">
         <div class="row">
             <div class="column">
-              <h2>MIGRATION MILESTONES</br>Data-driven stories documenting freedom of movement from below</h2>
+                <h2>MIGRATION MILESTONES</br>Data-driven stories documenting freedom of movement from below</h2>
             </div>
             <div class="column">
                 <a href="ali.html" class="active">Ali's Journey</a>
                 <a href="about.html">About the Project</a>
                 <a href="https://www.torontomu.ca/cerc-migration/">Return to CERC Migration</a>
-		<a href="index.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -41,7 +41,7 @@
     <div id="introImage">
         <h1 class="title">Knowledge is Power: Ali's Journey to Create Change</h1>
         <p class="subtitle">
-          This scrolling story traces the journey of a migrant named Ali as he travels across multiple borders along his route from Burkina Faso to Nigeria.</br> </br> <img id="originalImage" src="./images/down.png" alt="">
+            This scrolling story traces the journey of a migrant named Ali as he travels across multiple borders along his route from Burkina Faso to Nigeria.</br> </br> <img id="originalImage" src="./images/down.png" alt="">
         </p>
         <img id="originalImage" src="./video/ouagadougou.gif" alt="">
     </div>
@@ -75,7 +75,7 @@
                 <div class="step">
                     <h1 class="sectionHeading">Opportunity Came Knocking</h1>
                     <p>
-                        Ali was working and completing a master's degree in Law at the University of Ouagadougou in 2004, when he was approached by a media company named All-Africa, which was seeking to open a branch in the city of Lagos, Nigeria. Ali finished his degree before heading to Lagos to accept the job. He had never been to Nigeria before, and was very curious to see what it was like, but he was also hesitant because of the uncertainty of not knowing what to expect. He moved from <strong class="strongMilestone">Ouagadougou</strong> to <strong class="strongMilestone">Lagos</strong> in 2005, traveling by road with all the requisite documents he would need.
+                        Ali was working and completing a master's degree in Law at the University of Ouagadougou in 2004, when he was approached by a media company named All-Africa, which was seeking to open a branch in the city of Lagos, Nigeria. Ali finished his degree before heading to Lagos to accept the job. He had never been to Nigeria before, and was very curious to see what it was like, but he was also hesitant because of not knowing what to expect. He moved from <strong class="strongMilestone">Ouagadougou</strong> to <strong class="strongMilestone">Lagos</strong> in 2005, traveling by road with all the requisite documents he would need.
                     </p>
                 </div>
 
@@ -218,7 +218,7 @@
 
 
                 <div class="step">
-                    <h1 class="sectionHeading">Region-Wide Struggles at the Border</h1>
+                    <!-- <h1 class="sectionHeading">Region-Wide Struggles at the Border</h1> -->
                     <p>
                         In Ali's experience, difficulties at the border are region-wide, and even occur at the Burkina Faso border.
                         <img class="stepImage" src="./images/struggles.jpg" alt="">
@@ -249,7 +249,7 @@
                 </div>
 
                 <div class="step">
-                    <h1 class="sectionHeading">The Burkinabe Community </h1>
+                    <!-- <h1 class="sectionHeading">The Burkinabe Community </h1> -->
                     <p>
                         As the Secretary General of the Association of Burkinabe Residents in Nigeria, Ali encourages and informs people in the community about how to abide by the immigration rules, how to register their businesses, and a host of related things. In Nigeria, people generally don't ask for documentation or where people come from - they assume Burkinabe people are from Northern Nigeria.
                         <img class="stepImage" src="./images/burkinabe.jpg" alt="">
@@ -282,7 +282,7 @@
                 <div class="step">
                     <p>
                         <i>
-                            "I ask my people to do their papers, because when they come here, they don’t care, because the society here is so open that nobody will ask you where you are coming from provided you speak English and you can interact with them. Most of us think we are Northerners. When I say my name is Ali Kabre, some people will write Ali Kabir instead and I always correct them. Everyone here acts like we are the same. People ask if I am from Sokoto and I say no. I say I am from Burkina Faso and they are surprised. To me, it is a very open society, people are welcoming. There is no stigmatization. I can’t say I have been discriminated against at all."
+                            "I ask my people to do their papers, because when they come here, they don’t care, because the society here is so open that nobody will ask you where you are coming from provided you speak English and you can interact with them. Most think we are Northerners. When I say my name is Ali Kabre, some people will write Ali Kabir instead and I always correct them. Everyone here acts like we are the same. People ask if I am from Sokoto and I say no. I say I am from Burkina Faso and they are surprised. To me, it is a very open society, people are welcoming. There is no stigmatization. I can’t say I have been discriminated against at all."
                         </i>
                     </p>
                 </div>
@@ -378,7 +378,7 @@
         map.on('style.load', () => {
             map.setFog({});
             map.scrollZoom.disable();
-            map.dragPan.enable()
+            map.dragPan.disable()
             map.dragRotate.disable()
         });
 
@@ -566,6 +566,17 @@
         }
 
         init();
+    </script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
 </body>
