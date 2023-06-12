@@ -127,7 +127,7 @@ h1 {
 h3 {
     font-size: .9rem;
     text-align: center;
-    /* font-size: 1.75vw; */
+    font-size: 17px;
     color: rgba(0, 76, 155, 0.8);
     font-weight: 400;
     word-break: break-all;
@@ -135,7 +135,7 @@ h3 {
     /* background-color: white; */
     /* color: black; */
     /* padding: 2px; */
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 /* .row { */
@@ -169,7 +169,7 @@ h3 {
 
 p {
     text-align: left;
-    font-size: .2em;
+    font-size: .6em;
     padding: 10px;
     color: white;
     background-color: rgba(0, 76, 155);
