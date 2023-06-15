@@ -199,6 +199,14 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .intro__dek {
+        max-width: 40rem;
+        margin: 1rem 1rem 2rem 1rem;
+        text-align: left;
+    }
+}
+
 h1 {
     font-size: 1.5rem;
     /* font-size: 1.75vw; */
