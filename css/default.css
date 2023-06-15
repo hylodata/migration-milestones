@@ -207,6 +207,19 @@ body {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .spacer {
+        width: auto;
+	height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.25vw;
+        padding: 80px 100px 30px 100px;
+    }
+}
+
 h1 {
     font-size: 1.5rem;
     /* font-size: 1.75vw; */
